@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="icon"
+      href="../../image/header/logo/logodn.png"
+      type="image/x-icon"
+    />
+    <link href="style/style.css" rel="stylesheet" />
+    <title>Hoá Đơn | Đắc Nguyên</title>
+  </head>
+  <body>
+    <section class="background-invoice">
+      <div class="box-invoice">
+        <div class="header-invoice">
+          <div class="logo-left">
+            <img
+              src="../../image/header/logo/logodn.png"
+              alt="logo-dn"
+              class="logodn"
+            />
+          </div>
+          <div class="time-day">
+            <div class="date-code">
+              <span>Ngày &nbsp&nbsp</span> <span> : 20/9/2021</span>
+            </div>
+            <div class="date-code">
+              <span>Mã Đơn Hàng &nbsp&nbsp</span><span> : #DAFA213</span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-invoice">
+          <div class="title-box-invoice">HOÁ ĐƠN</div>
+          <div class="info-client">
+            <div>
+              <span class="info-left">Tên Khách Hàng :</span>
+              <span class="info-right" id="nameClient"></span>
+            </div>
+            <div>
+              <span class="info-left">Số Điện Thoại :</span>
+              <span class="info-right" id="phoneClient"></span>
+            </div>
+            <div>
+              <span class="info-left">Địa Chỉ :</span>
+              <span class="info-right" id="addressClient"></span>
+            </div>
+            <div>
+              <span class="info-left">Mã Đơn hàng : </span>
+              <span class="info-right"></span>
+            </div>
+          </div>
+          <div class="order-client">
+            <div class="title">Đơn Hàng</div>
+            <div class="box-order-client">
+              <div class="box-order-header">
+                <div class="row">
+                  <div class="col text-left">Sản Phẩm</div>
+                  <div class="col text-center">Số Lượng</div>
+                  <div class="col text-center">Giá Tiền</div>
+                  <div class="col text-right">Tổng Tiền</div>
+                </div>
+              </div>
+              <div class="box-center" id="box-order"></div>
+              <div class="box-bottom">
+                <div class="row item-center">
+                  <div class="col text-right">Tạm Tính :</div>
+                  <div class="col text-right" id="provisional">0.000 VNĐ</div>
+                </div>
+                <div class="row item-center">
+                  <div class="col text-right">Giảm Giá :</div>
+                  <div class="col text-right" id="SalePrice">0.000 VNĐ</div>
+                </div>
+                <div class="row item-center">
+                  <div class="col text-right">Tổng Tiền :</div>
+                  <div class="col text-right" id="totalPrice">0.000 VNĐ</div>
+                </div>
+              </div>
+            </div>
+            <div class="contact">
+              <span>Đắc Nguyên xin chân thành cảm ơn Quý Khách!</span>
+              <br />
+              Chúng tôi sẽ liên hệ với Quý Khách trong thời gian sớm nhất
+            </div>
+            <div class="box-button-home">
+              <a class="btn-home" href="/" onClick="clearData()">Trang Chủ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../../style/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</html>

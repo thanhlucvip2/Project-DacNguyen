@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/animation.css" />
+    <link
+      rel="stylesheet"
+      href="../style/fontawesome-pro-5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="icon"
+      href="../image/header/logo/logodn.png"
+      type="image/x-icon"
+    />
+    <title>Sản Phẩm | Đắc Nguyên</title>
+  </head>
+  <body>
+    <!-- ********************************* -->
+    <div style="position: relative">
+      <div class="menu-phone-open" id="menu-phone">
+        <div
+          class="close-menu-mobile"
+          style="cursor: pointer; text-align: right; margin-top: 20px"
+          onClick="closeMenuMobile()"
+        >
+          <i class="fal fa-times-circle"></i>
+        </div>
+        <div>
+          <img
+            src="../image/header/logo/logodn.png"
+            alt="đắc nguyên"
+            class="logo-header"
+          />
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/">TRANG CHỦ</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/danh-sach-san-pham/">SẢN PHẨM</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/danh-sach-bai-viet/">BÀI VIẾT</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="#contact" onclick="closeMenuPhone()"
+            >LIÊN HỆ</a
+          >
+        </div>
+      </div>
+      <div class="background-header" id="home">
+        <div>
+          <!-- menu phone -->
+          <span class="menu-phone" onClick="openMenuPhone()">
+            <i class="far fa-bars"></i>
+          </span>
+          <span
+            class="shopcart-phone"
+            onmouseover="openlistcartPhone()"
+            onmouseout="closelistcertPhone()"
+          >
+            <i class="fad fa-cart-arrow-down"></i>
+          </span>
+          <div
+            class="menu-desktop"
+            id="menu-desktops"
+            style="position: fixed; z-index: 30"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="../image/header/logo/logodn.png"
+                    alt="đắc nguyên"
+                    class="logo-header"
+                  />
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    justify-content: start;
+                    padding: 0px;
+                  "
+                >
+                  <ul class="menu-desktop-list">
+                    <li><a href="/">TRANG CHỦ</a></li>
+                    <li><a href="/danh-sach-san-pham/">SẢN PHẨM</a></li>
+                    <li><a href="/danh-sach-bai-viet/">BÀI VIẾT</a></li>
+                    <li><a href="#contact">LIÊN HỆ</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="col-3"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                  "
+                >
+                  <a
+                    href="/dat-hang/"
+                    style="text-decoration: none; position: relative"
+                  >
+                    <div
+                      class="shop-cart-header"
+                      onmouseover="openlistcartDesktop()"
+                      onmouseout="closelistcertDesktop()"
+                    >
+                      <span>Giỏ Hàng</span>
+                      <i class="fad fa-cart-arrow-down"></i>
+                    </div>
+                    <!-- cart list desktop -->
+                    <div class="cart-list-desktop">
+                      <div class="box-cart" id="cart-list-desktops">
+                        <div class="list-cart">
+                          <img
+                            src="../image/productlist/nuoccot.jpeg"
+                            alt="rượu phúc bồn tử"
+                            class="img-list-cart"
+                          />
+                          <div class="info-list-cart">
+                            <div class="quantity-list-cart">Số Lượng : 1</div>
+                            <div class="title-list-cart">
+                              Nước Cốt Phúc Bồn Tử
+                            </div>
+                            <div class="price-list-cart">124.000 VNĐ</div>
+                          </div>
+                        </div>
+                        <div class="list-cart">
+                          <img
+                            src="../image/productlist/nuoccot.jpeg"
+                            alt="rượu phúc bồn tử"
+                            class="img-list-cart"
+                          />
+                          <div class="info-list-cart">
+                            <div class="quantity-list-cart">Số Lượng : 1</div>
+                            <div class="title-list-cart">
+                              Nước Cốt Phúc Bồn Tử
+                            </div>
+                            <div class="price-list-cart">124.000 VNĐ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart list -->
+      <div class="cart-list">
+        <!-- list cart phone -->
+        <div class="cart-list-phone">
+          <div
+            class="box-cart"
+            id="cart-list-phones"
+            onmouseover="openlistcartPhone()"
+          >
+            <div class="list-cart">
+              <img
+                src="../image/productlist/nuoccot.jpeg"
+                alt="nước cốt phúc bồn tử"
+                class="img-list-cart"
+              />
+              <div class="info-list-cart">
+                <div class="quantity-list-cart">Số Lượng : 1</div>
+                <div class="title-list-cart">Nước Cốt Phúc Bồn Tử</div>
+                <div class="price-list-cart">124.000 VNĐ</div>
+              </div>
+            </div>
+            <a
+              onmouseover="openlistcartPhone()"
+              href="/dat-hang/"
+              style="
+                width: 100%;
+                border-radius: 100px;
+                background-color: #f15a5b;
+                color: aliceblue;
+                border: none;
+                display: block;
+                text-align: center;
+                padding: 10px 0px;
+                text-decoration: none;
+              "
+            >
+              Mua Ngay
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <!-- product -->
+        <section class="product">
+          <div class="container">
+            <!-- product -->
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="box-img-product">
+                  <div class="row">
+                    <div class="col-md-2 phone-procuct-info">
+                      <ul class="img-product-mini" id="img-product-mini">
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-0"
+                            src="/san-pham/img/product/1.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/1.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-1"
+                            src="/san-pham/img/product/2.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/2.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-2"
+                            src="/san-pham/img/product/3.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/3.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-3"
+                            src="/san-pham/img/product/4.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/4.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-4"
+                            src="/san-pham/img/product/5.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/5.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-5"
+                            src="/san-pham/img/product/6.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/6.jpeg')"
+                          />
+                        </li>
+                        <li class="img-product-list">
+                          <img
+                            id="img-mini-product-6"
+                            src="/san-pham/img/product/7.jpeg"
+                            alt="mứt phúc bồn tử"
+                            onClick="onChangeImg('/san-pham/img/product/7.jpeg')"
+                          />
+                        </li>
+                        <li class="btn-scroll-img-product">
+                          <button onClick="onScrollImg('down')">
+                            <i class="fas fa-chevron-up"></i>
+                          </button>
+                          <button onClick="onScrollImg('up')">
+                            <i class="fas fa-chevron-down"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-10" style="padding: 0px">
+                      <img
+                        src="/san-pham/img/product/6.jpeg"
+                        alt="mứt phúc bồn tử"
+                        class="img-product-big"
+                        id="img-product-big"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="box-info-product">
+                  <div class="evaluate">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star-half"></i>
+                    <span style="color: #898989">233 Đánh giá</span>
+                  </div>
+                  <h1 class="title-product">
+                    <span>Mứt Phúc Bồn Tử</span>
+                  </h1>
+                  <div class="code-product">Mã sản phẩm : DA234SD</div>
+                  <div class="price-product">
+                    <span>130.000 VNĐ</span>
+                    <del>200.000 VNĐ</del>
+                    <div class="product-on-sale">SALE 20%</div>
+                  </div>
+                  <div class="Brand">Thương hiệu : Đắc Nguyên</div>
+                  <div class="box-quantity-product-add">
+                    <div class="less-quantity">-</div>
+                    <div class="number-quantity">1</div>
+                    <div class="add-quantity">+</div>
+                  </div>
+                  <div class="button-add-to-cart">
+                    Thêm Vào Giỏ Hàng
+                    <i class="far fa-cart-arrow-down"></i>
+                  </div>
+                  <div class="short-description">
+                    <div class="text-center titleshort-description">
+                      Mô Tả Ngắn
+                    </div>
+                    <ul>
+                      <li>
+                        Công dụng: Đẹp da, cải thiện hệ tiêu hoá, hỗ trợ ngăn
+                        ngừa các bệnh nội tiết.
+                      </li>
+                      <li>Khối lượng: 200g</li>
+                      <li>
+                        Thành phần: Trái Phúc bồn tử(80%), Đường cát trắng.
+                      </li>
+                      <li>Chất bảo quản: Natribenzoate.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- info-product -->
+            <div class="detailed-product-description">
+              <div class="box-btn-product-detailed">
+                <button
+                  class="btn-product-detailed"
+                  id="btn-product-detailed_1"
+                  onClick="onProduct_detailed(1)"
+                >
+                  MÔ TẢ CHI TIẾT
+                </button>
+                <button
+                  onClick="onProduct_detailed(2)"
+                  id="btn-product-detailed_2"
+                  class="btn-product-detailed"
+                >
+                  ĐÁNH GIÁ
+                </button>
+                <button
+                  onClick="onProduct_detailed(3)"
+                  class="btn-product-detailed"
+                  id="btn-product-detailed_3"
+                >
+                  CHÍNH SÁCH MUA HÀNG
+                </button>
+              </div>
+              <!-- //detailed-description -->
+              <div class="detailed-description" id="detailed_description">
+                <div class="title-detailed-description">Công Dụng cơ bản :</div>
+                <ul>
+                  <li>Tốt cho người có bệnh đái tháo đường;</li>
+                  <li>Người đang có chế độ ăn kiêng;</li>
+                  <li>Chống rối loạn cương dương và điều trị liệt dương;</li>
+                  <li>
+                    Chống lão hóa, ngăn chặn và phòng ngừa ung thư, kháng viêm,
+                    diệt khuẩn;
+                  </li>
+                  <li>Bảo vệ mắt, tăng cường thị lực;.</li>
+                  <li>Giúp làn da thêm mịn màng, sáng da và đen tóc;</li>
+                  <li>
+                    Cải thiện tuần hoàn não và chống rối loạn tiền mãn kinh ở
+                    phụ nữ;
+                  </li>
+                  <li>Cải thiện hệ tiêu hóa,, giúp khỏe mạnh</li>
+                </ul>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/san-pham/img/product/6.jpeg"
+                      alt="Trái phúc bồn tử"
+                      class="img-detailed-description"
+                    />
+                  </div>
+                </div>
+                <p>
+                  * Đối Tượng Không nên dùng sản phẩm từ phúc bồn tử : Chất
+                  oxalate trong phúc bồn tử có thể kết tinh thành sỏi khi ăn quá
+                  nhiều, do đó những người phát hiện sỏi ở thận, túi mật hay
+                  bàng quang nên tránh. Cùng với đó, oxalate còn hạn chế khả
+                  năng hấp thụ canxi, vị vậy không khuyến khích cho người có bộ
+                  máy tiêu hóa kém
+                </p>
+              </div>
+              <!-- comment -->
+              <div class="box-comment" id="box_comment">
+                <div class="comment-number">
+                  <i class="fad fa-comments"></i> 5 Đánh giá
+                </div>
+                <ul class="comment-list">
+                  <li>
+                    <img
+                      src="img/img-comment/eea5af9a71aac661d6cf0aad512c8b69.png"
+                      alt="sản phẩm chất lượng"
+                      class="comment-img"
+                    />
+                    <span>
+                      <strong>Phong Nguyễn</strong><br />
+                      <p style="margin: 0px">Sản Phẩm Chất Lượng</p>
+                      <div class="evaluate">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star-half"></i>
+                      </div>
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="img/img-comment/cmt-1.jpeg"
+                      alt="giao hàng nhanh"
+                      class="comment-img"
+                    />
+                    <span>
+                      <strong>Phong Phúc</strong><br />
+                      <p style="margin: 0px">Giao hàng nhanh, chất lượng</p>
+                      <div class="evaluate">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="img/img-comment/cmt-2.jpeg"
+                      alt="khách hàng"
+                      class="comment-img"
+                    />
+                    <span>
+                      <strong>Phong Nguyễn</strong><br />
+                      <p style="margin: 0px">Sản Phẩm Chất Lượng, cho 5 sao</p>
+                      <div class="evaluate">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="img/img-comment/cmt-3.jpeg"
+                      alt="đánh giá khách hàng"
+                      class="comment-img"
+                    />
+                    <span>
+                      <strong>Phong Nguyễn</strong><br />
+                      <p style="margin: 0px">Có hàng tươi kh shop</p>
+                      <div class="evaluate">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </span>
+                  </li>
+                  <li>
+                    <img
+                      src="img/img-comment/cmt-2.jpeg"
+                      alt="đánh gia khách hàng"
+                      class="comment-img"
+                    />
+                    <span>
+                      <strong>Phong Nguyễn</strong><br />
+                      <p style="margin: 0px">Sản Phẩm Chất Lượng, cho 5 sao</p>
+                      <div class="evaluate">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+                <div class="box-input-comment">
+                  <div class="title-comment-input">Để lại đánh giá của bạn</div>
+                  <textarea
+                    class="comment-inputs"
+                    placeholder="Để lại bình luận của bạn"
+                    name="comment"
+                  ></textarea>
+                  <input
+                    class="email-name-inputs"
+                    placeholder="Tên"
+                    id="author"
+                    name="author"
+                    type="text"
+                    value=""
+                    size="30"
+                    maxlength="245"
+                    required="required"
+                  />
+                  <input
+                    placeholder="Email hoặc SĐT"
+                    class="email-name-inputs"
+                    id="author"
+                    name="author"
+                    type="text"
+                    value=""
+                    size="30"
+                    maxlength="245"
+                    required="required"
+                  />
+                  <div>
+                    <input
+                      name="submit"
+                      type="submit"
+                      id="submit"
+                      class="btn-comment"
+                      value="đăng bình luận"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- purchase policy -->
+              <div class="purchase-policy" id="purchase_policy">
+                <div class="title-purchase-policy">
+                  HƯỚNG DẪN MUA HÀNG & THANH TOÁN
+                </div>
+                <div style="margin: 10px 0px">
+                  Quý khách hàng có thể mua hàng theo 2 cách sau:
+                </div>
+                1.Thanh toán chuyển khoản:
+                <ul style="color: rgb(199, 199, 199)">
+                  <li>Mua hàng online tại Website Công ty</li>
+                  <li>
+                    Gọi trực tiếp đến hotline 0838.16.0480 xác nhận đơn hàng
+                  </li>
+                  <li>Thanh toán trực tiếp qua InternetBanking</li>
+                  <li>Tài khoản Ngân hàng XXXXXXXXXXX</li>
+                  <li>Nội dung : mã đơn hàng</li>
+                  <li>Số TK: XXXXXXXXXXXXX</li>
+                  <li>
+                    Ngân hàng Ngoại thương Việt Nam Vietcombank – chi nhánh Hà
+                    Nội
+                  </li>
+                </ul>
+                2.Thanh toán khi nhận hàng:
+                <ul style="color: rgb(199, 199, 199)">
+                  <li>Đặt hàng online tại Website Công ty</li>
+                  <li>Chờ nhân viên gọi xác nhận đơn hàng</li>
+                  <li>Quý khách thanh toán khi nhận được hàng</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- product-new -->
+        <section class="related-products">
+          <div class="container">
+            <div class="title-related-products">Sản phẩm liên quan</div>
+            <div class="list-related-products">
+              <div class="box-related-products">
+                <div style="position: relative">
+                  <img
+                    src="img/product/1.jpeg"
+                    alt="Trái phúc bồn tử"
+                    class="img-related-products"
+                  />
+                  <div class="sale-related-products">Sale 20%</div>
+                </div>
+                <div class="box-content-related-product">
+                  <div class="title-product-realated">
+                    Rượu Vang Phúc Bồn Tử
+                  </div>
+                  <div class="price-product-realated">
+                    <del>200.000 VNĐ</del>
+                    <div>100.000 VNĐ</div>
+                  </div>
+                  <div class="evaluate" style="border-bottom: none">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star-half"></i>
+                    <span style="color: #898989">233 Đánh giá</span>
+                  </div>
+                  <button
+                    onclick="cartProduct(11, 1)"
+                    class="product-button-shop"
+                  >
+                    <i class="fad fa-cart-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="box-related-products">
+                <div style="position: relative">
+                  <img
+                    src="img/product/2.jpeg"
+                    alt="Trái phúc bồn tử"
+                    class="img-related-products"
+                  />
+                  <div class="sale-related-products">Sale 20%</div>
+                </div>
+                <div class="box-content-related-product">
+                  <div class="title-product-realated">Rượu Phúc Bồn Tử</div>
+                  <div class="price-product-realated">
+                    <del>200.000 VNĐ</del>
+                    <div>100.000 VNĐ</div>
+                  </div>
+                  <div class="evaluate" style="border-bottom: none">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star-half"></i>
+                    <span style="color: #898989">233 Đánh giá</span>
+                  </div>
+                  <button
+                    onclick="cartProduct(11, 1)"
+                    class="product-button-shop"
+                  >
+                    <i class="fad fa-cart-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="box-related-products">
+                <div style="position: relative">
+                  <img
+                    src="img/product/3.jpeg"
+                    alt="Trái phúc bồn tử"
+                    class="img-related-products"
+                  />
+                  <div class="sale-related-products">Sale 20%</div>
+                </div>
+                <div class="box-content-related-product">
+                  <div class="title-product-realated">Mứt Phúc Bồn Tử</div>
+                  <div class="price-product-realated">
+                    <del>200.000 VNĐ</del>
+                    <div>100.000 VNĐ</div>
+                  </div>
+                  <div class="evaluate" style="border-bottom: none">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star-half"></i>
+                    <span style="color: #898989">233 Đánh giá</span>
+                  </div>
+                  <button
+                    onclick="cartProduct(11, 1)"
+                    class="product-button-shop"
+                  >
+                    <i class="fad fa-cart-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="box-related-products">
+                <div style="position: relative">
+                  <img
+                    src="img/product/4.jpeg"
+                    alt="Trái phúc bồn tử"
+                    class="img-related-products"
+                  />
+                  <div class="sale-related-products">Sale 20%</div>
+                </div>
+                <div class="box-content-related-product">
+                  <div class="title-product-realated">Siro Phúc Bồn Tử</div>
+                  <div class="price-product-realated">
+                    <del>200.000 VNĐ</del>
+                    <div>100.000 VNĐ</div>
+                  </div>
+                  <div class="evaluate" style="border-bottom: none">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star-half"></i>
+                    <span style="color: #898989">233 Đánh giá</span>
+                  </div>
+                  <button
+                    onclick="cartProduct(11, 1)"
+                    class="product-button-shop"
+                  >
+                    <i class="fad fa-cart-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- icon -->
+        <section class="background-icon">
+          <div class="box-icon-trademark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/1.png"
+                          alt="thanh toán nhận hàng"
+                          class="img-icon-bottom"
+                        />
+                        <div>Thanh Toán Khi Nhận Hàng</div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/2.png"
+                          alt="thương hiệu lớn"
+                          class="img-icon-bottom"
+                        />
+                        <div>Thương Hiệu Uy Tín Toàn Cầu</div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/3.png"
+                          alt="free ship"
+                          class="img-icon-bottom"
+                        />
+                        <div>FreeShip HCM Hoá Đơn Từ 800.000đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  "
+                >
+                  <div class="box-contact-icon-right">
+                    <div class="row">
+                      <div class="col">
+                        <div class="icon-contact-right">
+                          <span>
+                            <img
+                              src="../image/icon/icons_hotline_kn.svg"
+                              alt="khiếu nại"
+                            />
+                          </span>
+                          <div>Khiếu nại, góp ý <br />0348 57 5883</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="icon-contact-right">
+                          <span>
+                            <img
+                              src="../image/icon/icons_hotline_tv.svg"
+                              alt="hotline"
+                            />
+                          </span>
+                          <div>Tư Vấn <br />0838 16 0480</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+          <div></div>
+          <div class="background-foodter">
+            <div class="background-foodter-img">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <div class="wrapper">
+                      <div class="row box-form-contact">
+                        <div
+                          class="
+                            col-lg-8 col-md-12
+                            order-md-last
+                            d-flex
+                            align-items-stretch
+                          "
+                          data-aos="fade-left"
+                        >
+                          <div class="contact-wrap w-100 p-md-5 p-4">
+                            <h3
+                              class="mb-4"
+                              style="color: #000000; font-weight: 800"
+                            >
+                              TƯ VẤN MIỄN PHÍ
+                            </h3>
+                            <div class="mb-4">
+                              Quý Khách Vui Lòng Điền Thông Tin Liên Hệ!
+                            </div>
+                            <form
+                              class="contactForm"
+                              name="contactForm "
+                              id="contactForm "
+                            >
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="">
+                                    <label class="label" for="name "
+                                      >Họ Và Tên</label
+                                    >
+                                    <input
+                                      type="text "
+                                      class="form-control"
+                                      name="name "
+                                      id="name "
+                                      placeholder="Họ Và Tên "
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="">
+                                    <label class="label" for="email "
+                                      >Địa Chỉ Liên Hệ</label
+                                    >
+                                    <input
+                                      type="email "
+                                      class="form-control"
+                                      name="email "
+                                      id="email "
+                                      placeholder="Email hoặc SĐT"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="">
+                                    <label class="label" for="# "
+                                      >Nội Dung</label
+                                    >
+                                    <textarea
+                                      name="message "
+                                      class="form-control"
+                                      id="message "
+                                      cols="30 "
+                                      rows="4 "
+                                      placeholder="nội dung (có hoặc không) "
+                                    ></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-md-12" style="margin-top: 10%">
+                                  <div class="">
+                                    <button class="button-contact-foodter">
+                                      GỬI
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 col-md-12 d-flex align-items-stretch"
+                          data-aos="fade-right"
+                          style="background-color: #181818"
+                        >
+                          <div
+                            class="info-wrap w-100 p-md-5 p-4 box-left-contact"
+                          >
+                            <h3>Công ty Đắc Nguyên</h3>
+                            <p class="mb-4">
+                              Cảm ơn quý khách đã quan tâm đến sản phẩm của Đắc
+                              Nguyên
+                            </p>
+                            <div
+                              class="w-100 d-flex align-items-start mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span
+                                  class="fa fa-map-marker icon-map-contact"
+                                ></span>
+                              </div>
+                              <div class="text pl-3">
+                                <span>Địa Chỉ:</span> 14-04 Đường số 9A, Xã Bình
+                                Hưng, Huyện Bình Chánh, Hồ Chí Minh
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span class="fa fa-phone icon-contacts"></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Hotlite:</span>
+                                  <a href="tel://0838 16 0480 "
+                                    >0838 16 0480 – 0728 80 8081 – 0348 57
+                                    5883</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span
+                                  class="fa fa-paper-plane icon-contacts"
+                                ></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Email: ctydacnguyen@gmail.com</span>
+                                  <a href="mailto:ctydacnguyen@gmail.com "></a>
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span class="fa fa-globe icon-contacts"></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Website</span>
+                                  <a href="#https://dacnguyen.vn/"
+                                    >dacnguyen.vn</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- btn-home -->
+        <a href="#home" class="btn-home">
+          <i class="fas fa-arrow-alt-square-up"></i>
+        </a>
+        <div class="foodter">CÔNG TY ĐẮC NGUYÊN</div>
+      </div>
+    </div>
+  </body>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <script>
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "107927288153938");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v12.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <!-- Messenger Plugin chat Code -->
+  <!-- boottraps -->
+  <script src="../style/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    var menuPhone = document.getElementById("menu-phone");
+    menuPhone.style.display = "none";
+
+    function closeMenuPhone() {
+      closeMenuMobile();
+    }
+    function closeMenuMobile() {
+      menuPhone.classList.add("animation-menu-mobile-out");
+      setTimeout(() => {
+        menuPhone.style.display = "none";
+        menuPhone.classList.remove("animation-menu-mobile-out");
+      }, 600);
+    }
+    function openMenuPhone() {
+      menuPhone.style.display = "block";
+      menuPhone.classList.add("animation-menu-mobile-in");
+    }
+    setTimeout(() => {
+      menuPhone.classList.remove("animation-menu-mobile-in");
+    }, 700);
+  </script>
+  <!-- scroll menu -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("menu-desktops").style.top = "0";
+        document
+          .getElementById("menu-desktops")
+          .classList.add("animation-top-bottom-menu");
+      } else {
+        document
+          .getElementById("menu-desktops")
+          .classList.remove("animation-top-bottom-menu");
+        document.getElementById("menu-desktops").style.top = "-60px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+  <!-- cart list dekstop -->
+  <script>
+    document.getElementById("cart-list-desktops").style.display = "none";
+    function openlistcartDesktop() {
+      document.getElementById("cart-list-desktops").style.display = "block";
+    }
+    function closelistcertDesktop() {
+      document.getElementById("cart-list-desktops").style.display = "none";
+    }
+  </script>
+  <!-- cart list phone -->
+  <script>
+    document.getElementById("cart-list-phones").style.display = "none";
+    function openlistcartPhone() {
+      document.getElementById("cart-list-phones").style.display = "block";
+    }
+    function closelistcertPhone() {
+      document.getElementById("cart-list-phones").style.display = "none";
+    }
+  </script>
+  <!-- scroll description -->
+  <script>
+    //btn
+    var btn_product_detailed_1 = document.getElementById(
+      "btn-product-detailed_1"
+    );
+    var btn_product_detailed_2 = document.getElementById(
+      "btn-product-detailed_2"
+    );
+    var btn_product_detailed_3 = document.getElementById(
+      "btn-product-detailed_3"
+    );
+    //box-btn-info
+    var detailed_description = document.getElementById("detailed_description");
+    var box_comment = document.getElementById("box_comment");
+    var purchase_policy = document.getElementById("purchase_policy");
+    // function
+    detailed_description.style.display = "block";
+    btn_product_detailed_1.classList.add("box-btn-product-detailed-active");
+    box_comment.style.display = "none";
+    purchase_policy.style.display = "none";
+    function onProduct_detailed(number) {
+      btn_product_detailed_1.classList.remove(
+        "box-btn-product-detailed-active"
+      );
+      btn_product_detailed_2.classList.remove(
+        "box-btn-product-detailed-active"
+      );
+      btn_product_detailed_3.classList.remove(
+        "box-btn-product-detailed-active"
+      );
+      box_comment.style.display = "none";
+      purchase_policy.style.display = "none";
+      detailed_description.style.display = "none";
+      if (number === 1) {
+        btn_product_detailed_1.classList.add("box-btn-product-detailed-active");
+        detailed_description.style.display = "block";
+      } else if (number === 2) {
+        btn_product_detailed_2.classList.add("box-btn-product-detailed-active");
+        box_comment.style.display = "block";
+      } else if (number === 3) {
+        btn_product_detailed_3.classList.add("box-btn-product-detailed-active");
+        purchase_policy.style.display = "block";
+      }
+    }
+  </script>
+  <!-- scroll img product -->
+  <script>
+    // scroll img
+    var imgList = document.getElementsByClassName("img-product-list");
+    var idImgList = document.getElementById("img-mini-product-6");
+    // for (let i = 0; i < 4; i++) {
+    //   imgList[i].style.display = "block";
+    // }
+
+    var renderImgProduct = [0, 1, 2, 3];
+    for (let i = 0; i < imgList.length; i++) {
+      imgList[i].style.display = "none";
+    }
+    renderImgProduct.map((a) => {
+      return (imgList[a].style.display = "block");
+    });
+    function ReRenderimgproduct(key) {
+      for (let i = 0; i < imgList.length; i++) {
+        document
+          .getElementById(`img-mini-product-${i}`)
+          .classList.add("animation_blur");
+      }
+      setTimeout(() => {
+        for (let i = 0; i < imgList.length; i++) {
+          imgList[i].style.display = "none";
+        }
+        for (let i = 0; i < imgList.length; i++) {
+          document
+            .getElementById(`img-mini-product-${i}`)
+            .classList.remove("animation_blur");
+        }
+        renderImgProduct.map((a) => {
+          return (imgList[a].style.display = "block");
+        });
+      }, 300);
+    }
+
+    function onScrollImg(key) {
+      if (key === "up") {
+        if (renderImgProduct[3] < imgList.length - 1) {
+          renderImgProduct = renderImgProduct.map((a) => {
+            return a + 1;
+          });
+          ReRenderimgproduct(key);
+        }
+      } else if (key === "down") {
+        if (renderImgProduct[0] > 0) {
+          renderImgProduct = renderImgProduct.map((a) => {
+            return a - 1;
+          });
+          ReRenderimgproduct(key);
+        }
+      }
+    }
+
+    function timeRenderProductAuto(idImg) {
+      setInterval(() => {
+        if (idImg < imgList.length) {
+          const imgChaneg = document
+            .getElementById(`img-mini-product-${idImg}`)
+            .getAttribute("src");
+          document
+            .getElementById("img-product-big")
+            .classList.add("animation_blur");
+          setTimeout(() => {
+            document
+              .getElementById("img-product-big")
+              .setAttribute("src", imgChaneg);
+            document
+              .getElementById("img-product-big")
+              .classList.remove("animation_blur");
+          }, 200);
+          idImg++;
+          if (idImg === imgList.length) {
+            idImg = 0;
+          }
+        }
+      }, 5000);
+    }
+    timeRenderProductAuto(0);
+    onChangeImg;
+    function onChangeImg(linkimg) {
+      document
+        .getElementById("img-product-big")
+        .classList.add("animation_blur");
+      setTimeout(() => {
+        document.getElementById("img-product-big").setAttribute("src", linkimg);
+        document
+          .getElementById("img-product-big")
+          .classList.remove("animation_blur");
+      }, 300);
+    }
+  </script>
+</html>

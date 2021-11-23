@@ -1,0 +1,1049 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    <!-- animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />
+    <link href="style/fontawesome-pro-5.13.0/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style/menu-phone.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;family=Glory:ital,wght@0,100;1,100&amp;family=Lobster&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;family=Glory:ital,wght@0,100;1,100&amp;family=Lobster&amp;family=Pacifico&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;family=Glory:ital,wght@0,100;1,100&amp;family=Lobster&amp;family=Pacifico&amp;family=Roboto:wght@100&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="image/header/logo/logodn.png" type="image/x-icon" />
+
+    <title>Công Ty Đắc Nguyên</title>
+  </head>
+  <body
+    id="body"
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+  >
+    <!-- open menu mobile -->
+    <div class="open-menu-mobile" onclick="openMenuMobile()">
+      <i class="far fa-stream"></i>
+    </div>
+    <!-- menu-mobile -->
+    <div class="menu-mobile" id="menu-mobile" style="display: none">
+      <!-- close menu -->
+      <div
+        class="close-menu-mobile"
+        onclick="closeMenuMobile()"
+        style="cursor: pointer"
+      >
+        <i class="fal fa-times-circle"></i>
+      </div>
+      <div class="text-center">
+        <img
+          src="image/header/logo/logodn.png"
+          class="logo-header"
+          alt="dacnguyen-logo"
+        />
+      </div>
+      <div class="list-menu-mobile">
+        <ul>
+          <li>
+            <a
+              id="menu-mobile-1"
+              href="#home"
+              onclick="closeMenuMobile()"
+              class="active_menu"
+              style="color: rgb(255, 177, 0)"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li>
+            <a
+              id="menu-mobile-2"
+              href="#benefit"
+              onclick="closeMenuMobile()"
+              style="color: rgb(255, 255, 255)"
+              >CÔNG DỤNG</a
+            >
+          </li>
+          <li>
+            <a
+              id="menu-mobile-3"
+              href="#product"
+              onclick="closeMenuMobile()"
+              style="color: rgb(255, 255, 255)"
+              >SẢN PHẨM</a
+            >
+          </li>
+          <li>
+            <a
+              id="menu-mobile-4"
+              href="#list-product"
+              onclick="closeMenuMobile()"
+              style="color: rgb(255, 255, 255)"
+              >MUA HÀNG</a
+            >
+          </li>
+          <li>
+            <a
+              id="menu-mobile-5"
+              href="#content"
+              onclick="closeMenuMobile()"
+              style="color: rgb(255, 255, 255)"
+              >BÀI VIẾT</a
+            >
+          </li>
+          <li>
+            <a
+              id="menu-mobile-6"
+              href="#contact"
+              onclick="closeMenuMobile()"
+              style="color: rgb(255, 255, 255)"
+              >LIÊN HỆ</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- body -->
+    <div style="position: absolute; width: 100%">
+      <!-- ***************************************************************************** -->
+      <!-- header -->
+      <span class="shop-cart" id="shop-cart">
+        <!-- render cart *#################################### -->
+        <div class="box-cart" id="box-cart" style="display: none"></div>
+        <!-- render cart *#################################### -->
+        <div class="icon-shop-cart">
+          <span onclick="FormCart('open')" class="btn-open-form-cart">
+            <i class="fad fa-cart-arrow-down"></i>
+            <span class="title-shop-cart" id="total-price">0</span>
+          </span>
+          <span id="box-btn" style="display: none">
+            <a href="/dat-hang" class="btn-cart">Mua Ngay</a>
+            <i
+              class="fad fa-window-close btn-close-cart"
+              onclick="FormCart('close')"
+            ></i>
+          </span>
+        </div>
+      </span>
+      <section>
+        <div id="home"></div>
+        <div class="background-header">
+          <div class="background-header-color">
+            <!-- menu -->
+            <div id="animation_menu_desktops">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-lg-2 col-md-4 col-sm-6 col-6"
+                    style="padding: 0px"
+                  >
+                    <img
+                      src="image/header/logo/logodn.png"
+                      class="logo-header"
+                      id="logo-menuScroll"
+                      alt="dacnguyen-logo"
+                      style="display: block"
+                    />
+                    <div class="text-logo">
+                      <div
+                        class="logo-text"
+                        id="logo-text"
+                        style="display: none"
+                      >
+                        ĐẮC NGUYÊN
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-10 col-md-8 col-sm-6 col-6 text-right"
+                    style="padding: 0px"
+                  >
+                    <ul class="box-menu-desktop">
+                      <li>
+                        <a
+                          id="menu1"
+                          href="#home"
+                          class="menu-desktop active_menu"
+                          style="color: rgb(255, 177, 0)"
+                          >Trang Chủ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="menu2"
+                          href="#benefit"
+                          class="menu-desktop"
+                          style="color: rgb(230, 214, 190)"
+                          >Công Dụng</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="menu3"
+                          href="#product"
+                          class="menu-desktop"
+                          style="color: rgb(230, 214, 190)"
+                          >Sản Phẩm</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="menu4"
+                          href="#list-product"
+                          class="menu-desktop"
+                          style="color: rgb(230, 214, 190)"
+                          >Mua Hàng</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="menu5"
+                          href="#content"
+                          class="menu-desktop"
+                          style="color: rgb(230, 214, 190)"
+                          >Bài Viết</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          id="menu6"
+                          href="#contact"
+                          class="menu-desktop"
+                          style="color: rgb(230, 214, 190)"
+                          >Liên Hệ</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- //menu phone -->
+                    <span class="box-menu-phone" onclick="clickmenuphone() ">
+                      <i class="fas fa-bars menu-phone"></i>
+                      <div
+                        class="menu-phone"
+                        id="menu-phone"
+                        style="display: none"
+                      >
+                        <ul style="padding-left: 0px">
+                          <li>
+                            <a
+                              href="#home"
+                              class="menu-phone"
+                              id="menu-phone-1"
+                              style="color: rgb(255, 113, 113)"
+                              >Trang Chủ</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#benefit"
+                              class="menu-phone"
+                              id="menu-phone-2"
+                              style="color: rgb(215, 200, 152)"
+                              >Công Dụng</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#product"
+                              class="menu-phone"
+                              id="menu-phone-3"
+                              style="color: rgb(215, 200, 152)"
+                              >Sản Phẩm</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#list-product"
+                              class="menu-phone"
+                              id="menu-phone-4"
+                              style="color: rgb(215, 200, 152)"
+                              >Mua Hàng</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#content"
+                              class="menu-phone"
+                              id="menu-phone-5"
+                              style="color: rgb(215, 200, 152)"
+                              >Bài Viết</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#contact"
+                              class="menu-phone"
+                              id="menu-phone-6"
+                              style="color: rgb(215, 200, 152)"
+                              >Liên Hệ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <h1 class="title-header-dn" style="font-weight: 800">
+                Đắc Nguyên
+              </h1>
+              <br />
+              <h2 class="title-header">
+                Chào Mừng Mọi Người Đã Đến Với Thương Hiệu Hàng Đầu Về Phúc Bồn
+                Tử
+              </h2>
+              <div style="text-align: center; margin-top: 2%">
+                <button class="button-benefit" onclick="openWeb()">
+                  <span><i class="fad fa-eye"></i> XEM THÊM</span>
+                </button>
+                <button
+                  class="button-benefit"
+                  style="
+                    background-color: #0000003b;
+                    border: 1px solid #ffffff6b;
+                  "
+                >
+                  <span
+                    ><i class="fad fa-user-md-chat"></i>
+                    <a href="#contact" style="color: white"
+                      >LIÊN HỆ TƯ VẤN</a
+                    ></span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***************************************************************************** -->
+      <!-- banner-sale -->
+      <section>
+        <div class="banner-sale-background">
+          <div class="container">
+            <div class="row">
+              <span class="text-sale">
+                Ưu Đãi Mùa Dịch, Giảm Giá 20% Cho Tất Cả Các Sản Phẩm Tại Đắc
+                Nguyên.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner-sale -->
+      <!-- ***************************************************************************** -->
+      <!-- benefit -->
+      <section>
+        <div id="benefit"></div>
+        <div class="background-benefit-img">
+          <div class="background-benefit-color">
+            <div class="container">
+              <div class="row justify-content-around">
+                <div class="col-lg-4">
+                  <!-- title -->
+                  <h1 class="title-section" style="text-align: left">
+                    CÔNG DỤNG TUYỆT VỜI CỦA <span>PHÚC BỒN TỬ</span>
+                  </h1>
+
+                  <div class="text-benefit">
+                    Phúc Bồn Tử được đông Y xem như là một loại "thực dược lưỡng
+                    dụng" bởi vì có được nhiều công dụng tốt cho sức khoẻ mà còn
+                    chửa được nhiều bệnh.
+                  </div>
+                  <a href="#contact">
+                    <button class="button-benefit">
+                      <span>Liên Hệ Tư Vấn</span>
+                    </button>
+                  </a>
+                </div>
+                <div class="col-lg-7">
+                  <div class="row">
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12"
+                      style="margin-bottom: 11px"
+                    >
+                      <div
+                        class="box-benefit background-box-benefit-1 aos-init"
+                        data-aos="fade-down-right"
+                      >
+                        <img
+                          src="image/benefit/11.png "
+                          class="img-benefit"
+                          alt="công dụng của phúc bồn tử"
+                        />
+                        <div class="content-benefit">Giúp sáng mắt</div>
+
+                        <div class="textJustify">
+                          Trong phúc bồn tử có chứa một hàm lượng lớn chất chống
+                          ôxy hóa có tác dụng phòng ngừa sự ôxy hóa và loại trừ
+                          những gốc tự do gây hại đến võng mạc.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12"
+                      style="margin-bottom: 11px"
+                    >
+                      <div
+                        class="box-benefit background-box-benefit-2 aos-init"
+                        data-aos="fade-down-left"
+                      >
+                        <img
+                          src="image/benefit/33.png "
+                          class="img-benefit"
+                          alt="công dụng của phúc bồn tử"
+                        />
+                        <div class="content-benefit">
+                          Duy trì sức khỏe tim mạch
+                        </div>
+                        <div class="textJustify">
+                          Kali điều hòa nhịp tim và huyết áp của cơ thể quả phúc
+                          bồn tử còn là một trong những loại trái cây ít đường
+                          tốt cho sức khỏe.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12"
+                      style="margin-bottom: 11px"
+                    >
+                      <div
+                        class="box-benefit background-box-benefit-3 aos-init"
+                        data-aos="fade-up-right"
+                      >
+                        <img
+                          src="image/benefit/44.png "
+                          class="img-benefit"
+                          alt="công dụng của phúc bồn tử"
+                        />
+                        <div class="content-benefit">Tăng cường bảo vệ gan</div>
+                        <div class="textJustify">
+                          Phúc Bồn Tử là loại quả giàu vitamin C, E, B6, B12,
+                          selen,... giúp tăng cường bảo vệ và phục hồi chức năng
+                          gan.
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 col-sm-6 col-12"
+                      style="margin-bottom: 11px"
+                    >
+                      <div
+                        class="box-benefit background-box-benefit-4 aos-init"
+                        data-aos="fade-up-left"
+                      >
+                        <img
+                          src="image/benefit/22.png "
+                          class="img-benefit"
+                          alt="công dụng của phúc bồn tử"
+                        />
+                        <div class="content-benefit">Làm đẹp da</div>
+                        <div class="textJustify">
+                          Nhờ có Flavonoid tác dụng kháng khuẩn tiêu viêm , hạ
+                          áp , chống dị ứng , có tác dụng tốt trong việc bảo vệ
+                          và làm đẹp da.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- benefit -->
+      <!-- ***************************************************************************** -->
+      <!-- product-outstanding -->
+      <section>
+        <div id="product"></div>
+        <div class="backgeound-product-outstanding">
+          <div class="container">
+            <!-- title -->
+            <h1 class="title-section">
+              SẢN PHẨM NỔI BẬT CỦA <span>ĐẮC NGUYÊN</span>
+            </h1>
+          </div>
+          <div class="container" style="margin-top: -2em">
+            <div class="row product-top">
+              <div
+                class="
+                  col-lg-4 col-md-5
+                  text-center
+                  col-12
+                  product_outstanding_img_up
+                "
+              >
+                <img
+                  src="image/product-outstanding/hop-vang-2.jpeg "
+                  class="img-product aos-init aos-animate"
+                  alt="Rượu vang phúc bồn tử"
+                  data-aos="fade-left"
+                />
+              </div>
+              <div
+                class="col-lg-8 col-md-7 box-product-top col-12 aos-init"
+                data-aos="fade-right"
+              >
+                <div class="text-center">
+                  <h1>Vang Phúc Bồn Tử</h1>
+                  <p>
+                    Khi nhắc đến Vang mọi người sẽ nghĩ ngay đến nho để thay đổi
+                    suy nghĩ đó Đắc Nguyên đã cho ra đời dòng Vang Phúc Bồn Tử,
+                    đem đến sự mới mẻ và trải nghiệm tuyệt vời và khó quên đối
+                    với người tiêu dùng.
+                  </p>
+                  <p>
+                    Sự tươi mát của những quả Phúc Bồn Tử chín mọng , vị chua
+                    nhẹ và thơm dịu của Vang khi lan tỏa tỏng miệng sẽ giúp khơi
+                    dậy mùi vị của món ăn, hậu vị lâu dài lưu lại trong vòm
+                    miệng. Tất cả sự hoàn hảo đều có trong Vang Phúc Bồn Tử Đắc
+                    Nguyên
+                  </p>
+                  <button
+                    class="product-outstanding-button"
+                    onclick="openProduct('vang-pbt')"
+                  >
+                    <i class="fad fa-shopping-cart"></i>
+                    Mua Ngay
+                  </button>
+                </div>
+              </div>
+              <div
+                class="
+                  col-lg-4 col-md-5
+                  text-center
+                  col-12
+                  product_outstanding_img_down
+                "
+              >
+                <img
+                  src="image/product-outstanding/hop-vang-2.jpeg "
+                  class="img-product aos-init"
+                  alt="Vang Phúc Bồn Tử"
+                  data-aos="fade-left"
+                />
+              </div>
+            </div>
+            <!-- product bottom -->
+            <div class="row product-top">
+              <div
+                class="col-lg-4 col-md-5 text-left aos-init"
+                data-aos="fade-right"
+              >
+                <img
+                  src="image/product-outstanding/concept-mat-phuc-bon-tu-2-500x500.jpeg "
+                  class="img-product"
+                  alt="Mật phúc bồn tử"
+                />
+              </div>
+              <div
+                class="col-lg-8 col-md-7 box-product-bottom aos-init"
+                data-aos="fade-left"
+              >
+                <div class="text-center">
+                  <h1>Mật Phúc Bồn Tử</h1>
+                  <p>
+                    Được làm từ những trái mâm xôi tươi nguyên chất, chín mọng,
+                    ủ và lấy mật, tạo nên hương vị đậm đà, vị ngọt thanh và
+                    hương thơm đặc trưng.
+                  </p>
+                  <p>
+                    Từ khi ra mắt đến nay, Mật Phúc Bồn Tử luôn nhận được phản
+                    hồi tích cực từ phía khách hàng, là sản phẩm bán chạy nhất
+                    từ trước đến hiện tại.
+                  </p>
+                  <p>
+                    Mật Phúc Bồn Tử ngoài dùng làm nước giải khát ra còn có công
+                    dụng: Đẹp da, cải thiện hệ tiêu hoá, hỗ trợ ngăn ngừa các
+                    bệnh nội tiết.
+                  </p>
+
+                  <button
+                    class="product-outstanding-button"
+                    onclick="openProduct('mat-pbt')"
+                  >
+                    <i class="fad fa-shopping-cart"></i>
+                    Mua Ngay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="product-outstanding-button-list">
+              <a href="/danh-sach-san-pham/">
+                <button
+                  class="button-benefit"
+                  style="background-color: #ff000000; border: 1px solid"
+                >
+                  <span><i class="fad fa-eye"></i>XEM THÊM SẢN PHẨM</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product-outstanding -->
+      <!-- ***************************************************************************** -->
+      <!-- list-product -->
+      <section>
+        <div id="list-product"></div>
+        <div class="background-product-list">
+          <div class="background-product-list-color">
+            <div class="container">
+              <!-- title -->
+              <h1 class="title-section">SẢN PHẨM <span>BÁN CHẠY</span></h1>
+            </div>
+            <!-- product -->
+            <div class="container">
+              <div class="container">
+                <!-- ######################## render data from json ######################## -->
+                <div class="listproduct-boxs" id="render-list-product"></div>
+
+                <!-- ######################## render data from json ######################## -->
+
+                <div class="box-button-listproduct-bottom">
+                  <div style="text-align: center; margin-top: 2%">
+                    <a href="/danh-sach-san-pham/">
+                      <button class="button-benefit">
+                        <span
+                          ><i class="fad fa-eye"></i> XEM THÊM SẢN PHẨM</span
+                        >
+                      </button>
+                    </a>
+                    <button
+                      class="button-benefit"
+                      style="
+                        background-color: #0000003b;
+                        border: 1px solid #ffffff6b;
+                      "
+                    >
+                      <span
+                        ><i class="fad fa-user-md-chat"></i>
+                        <a
+                          href="#contact"
+                          style="color: white; text-decoration: none"
+                          >LIÊN HỆ TƯ VẤN</a
+                        ></span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- list-product -->
+      <!-- ***************************************************************************** -->
+      <!-- content -->
+      <section>
+        <div id="content"></div>
+        <div class="background-content">
+          <div class="container">
+            <!-- title -->
+            <h1 class="title-section">BÀI VIẾT <span>MỚI NHẤT</span></h1>
+          </div>
+          <!-- content -->
+          <div class="container">
+            <div class="row link-content" id="renderContentJson"></div>
+            <div style="text-align: center; margin-top: 41px">
+              <a href="/danh-sach-bai-viet/">
+                <button class="button-benefit">
+                  <span><i class="fad fa-eye"></i> XEM THÊM BÀI VIẾT</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- content -->
+      <!-- ***************************************************************************** -->
+      <!-- info quality -->
+      <section>
+        <div class="background-info-quality">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6 text-center">
+                <img
+                  src="image/info-quality/1.png"
+                  class="img-info-infoquality"
+                  alt="Sản phẩm đảm bảo chất lượng"
+                />
+                <div class="title-info-quality">SẢN PHẨM CHẤT LƯỢNG</div>
+                <div class="content-info-quality">
+                  Sản phẩm được đảm bảo chất lượng tốt nhất từ thiên nhiên
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 text-center">
+                <img
+                  src="image/info-quality/2.png"
+                  class="img-info-infoquality"
+                  alt="sản phẩm được giao hàng miễn phí"
+                />
+                <div class="title-info-quality">GIAO HÀNG TẬN NƠI</div>
+                <div class="content-info-quality">
+                  Các sản phẩm được giao hàng miễn phí tận nơi toàn quốc
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 text-center">
+                <img
+                  src="image/info-quality/3.png"
+                  class="img-info-infoquality"
+                  alt="TƯ VẤN NHIỆT TÌNH"
+                />
+                <div class="title-info-quality">TƯ VẤN NHIỆT TÌNH</div>
+                <div class="content-info-quality">
+                  Tư vấn cho khách hàng lựa chọn sản phẩm phù hợp nhu cầu
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6 text-center">
+                <img
+                  src="image/info-quality/4.png"
+                  class="img-info-infoquality"
+                  alt="TỐT CHO SỨC KHOẺ"
+                />
+                <div class="title-info-quality">TỐT CHO SỨC KHOẺ</div>
+                <div class="content-info-quality">
+                  Các sản phẩm đều được đảm bảo an toàn và tốt cho sức khoẻ
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- info quality -->
+      <!-- ***************************************************************************** -->
+      <!-- contact -->
+      <section>
+        <div id="contact"></div>
+        <div class="background-foodter">
+          <div class="background-foodter-img">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="wrapper">
+                    <div class="row box-form-contact">
+                      <div
+                        class="
+                          col-lg-8 col-md-6
+                          order-md-last
+                          d-flex
+                          align-items-stretch
+                          aos-init
+                        "
+                        data-aos="fade-left"
+                      >
+                        <div class="contact-wrap w-100 p-md-5 p-4">
+                          <h3
+                            class="mb-4"
+                            style="color: #f44335; font-weight: 800"
+                          >
+                            TƯ VẤN MIỄN PHÍ
+                          </h3>
+                          <div class="mb-4">
+                            Quý Khách Vui Lòng Điền Thông Tin Liên Hệ!
+                          </div>
+                          <form
+                            class="contactForm"
+                            name="contactForm "
+                            id="contactForm "
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="">
+                                  <label class="label" for="name "
+                                    >Họ Và Tên</label
+                                  >
+                                  <input
+                                    type="text "
+                                    class="form-control"
+                                    name="name "
+                                    id="name "
+                                    placeholder="Họ Và Tên "
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="">
+                                  <label class="label" for="email "
+                                    >Địa Chỉ Liên Hệ</label
+                                  >
+                                  <input
+                                    type="email "
+                                    class="form-control"
+                                    name="email "
+                                    id="email "
+                                    placeholder="Email hoặc SĐT"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="">
+                                  <label class="label" for="# ">Nội Dung</label>
+                                  <textarea
+                                    name="message "
+                                    class="form-control"
+                                    id="message "
+                                    cols="30 "
+                                    rows="4 "
+                                    placeholder="nội dung (có hoặc không) "
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="col-md-12" style="margin-top: 10%">
+                                <div class="">
+                                  <button class="button-contact-foodter">
+                                    GỬI
+                                  </button>
+                                  <a
+                                    href="#home"
+                                    class="button-contact-foodter-home"
+                                  >
+                                    <i class="fas fa-chevron-up"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          col-lg-4 col-md-6
+                          d-flex
+                          align-items-stretch
+                          aos-init
+                        "
+                        data-aos="fade-right"
+                        style="background-color: #262626"
+                      >
+                        <div
+                          class="info-wrap w-100 p-md-5 p-4 box-left-contact"
+                        >
+                          <h3>Công Ty Đắc Nguyên</h3>
+                          <p class="mb-4">
+                            Cảm Ơn Mọi Người Đã Quan Tâm Đến Đắc Nguyên
+                          </p>
+                          <div class="w-100 d-flex align-items-start mg-bt-17">
+                            <div
+                              class="
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                            >
+                              <span
+                                class="fa fa-map-marker icon-map-contact"
+                              ></span>
+                            </div>
+                            <div class="text pl-3">
+                              <p>
+                                <span>Địa Chỉ:</span> 14-04 Đường số 9A, Xã Bình
+                                Hưng, Huyện Bình Chánh, Hồ Chí Minh
+                              </p>
+                            </div>
+                          </div>
+                          <div class="w-100 d-flex align-items-center mg-bt-17">
+                            <div
+                              class="
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                            >
+                              <span class="fa fa-phone icon-contacts"></span>
+                            </div>
+                            <div class="text pl-3">
+                              <p>
+                                <span>Hotlite:</span>
+                                <a href="tel://0838 16 0480 "
+                                  >0838 16 0480 – 0728 80 8081 – 0348 57 5883</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div class="w-100 d-flex align-items-center mg-bt-17">
+                            <div
+                              class="
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                            >
+                              <span
+                                class="fa fa-paper-plane icon-contacts"
+                              ></span>
+                            </div>
+                            <div class="text pl-3">
+                              <p>
+                                <span>Email:</span>
+                                <a href="mailto:ctydacnguyen@gmail.com "
+                                  >ctydacnguyen@gmail.com</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div class="w-100 d-flex align-items-center mg-bt-17">
+                            <div
+                              class="
+                                d-flex
+                                align-items-center
+                                justify-content-center
+                              "
+                            >
+                              <span class="fa fa-globe icon-contacts"></span>
+                            </div>
+                            <div class="text pl-3">
+                              <p>
+                                <span>Website</span>
+                                <a href="#https://dacnguyen.vn/"
+                                  >dacnguyen.vn</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- maps -->
+      <section style="background-color: #262626">
+        <div class="container">
+          <iframe
+            data-aos="flip-up"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.521925734594!2d106.66800268978615!3d10.724418010664522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fba902df1af%3A0xb8826993ded986a3!2sSaigon%20Mia!5e0!3m2!1svi!2s!4v1631080253791!5m2!1svi!2s"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="aos-init"
+          ></iframe>
+        </div>
+      </section>
+      <div class="foodter">CÔNG TY ĐẮC NGUYÊN</div>
+      <!-- foodter -->
+      <!-- ***************************************************************************** -->
+    </div>
+
+    <!-- bootstrap -->
+    <script
+      id="facebook-jssdk"
+      src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"
+    ></script>
+    <script src="style/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/animation.js"></script>
+
+    <!-- animation AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- animation AOS -->
+    <script src="js/js-menu-phone.js"></script>
+    <!-- //JS json -->
+    <script src="json/renderdatajson.js"></script>
+    <!-- //JS json -->
+    <!-- open close form cart -->
+    <script>
+      const boxCart = document.getElementById("box-cart");
+      const btnCart = document.getElementById("box-btn");
+      boxCart.style.display = "none";
+      btnCart.style.display = "none";
+      // boxCart.style.display = "none";
+      function FormCart(event) {
+        if (event === "open") {
+          if (boxCart.style.display === "none") {
+            boxCart.style.display = "block";
+            btnCart.style.display = "inline";
+            // add animation open box cart
+
+            document
+              .getElementById("shop-cart")
+              .classList.add("animation-right-left");
+            // remover animation open box cart
+            setTimeout(() => {
+              document
+                .getElementById("shop-cart")
+                .classList.remove("animation-right-left");
+            }, 1000);
+            setTimeout(() => {
+              boxCart.style.display = "none";
+              btnCart.style.display = "none";
+            }, 10000);
+          }
+        } else if (event === "close") {
+          boxCart.style.display = "none";
+          btnCart.style.display = "none";
+        }
+      }
+    </script>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div
+      id="fb-customer-chat"
+      class="fb-customerchat"
+      page_id="107927288153938"
+      attribution="biz_inbox"
+    ></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "107927288153938");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v12.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- Messenger Plugin chat Code -->
+  </body>
+</html>

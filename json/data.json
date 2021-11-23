@@ -1,0 +1,63 @@
+{
+  "listProduct": [
+    {
+      "name": "Mật Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 450,
+      "newprice": 360,
+      "sold": 122,
+      "img": "image/productlist/concept-mat-phuc-bon-tu-2.jpeg",
+      "id": 11
+    },
+    {
+      "name": "Rượu Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 870,
+      "newprice": 696,
+      "sold": 212,
+      "img": "image/productlist/concept-ruou-phuc-bon-tu-1.jpeg",
+      "id": 22
+    },
+    {
+      "name": "Nước Cốt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 312,
+      "img": "image/productlist/nuoccot.jpeg",
+      "id": 33
+    },
+    {
+      "name": "Mứt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 29,
+      "img": "image/productlist/mut.jpeg",
+      "id": 44
+    }
+  ],
+  "listcontent": [
+    {
+      "title": "Top 15 thực phẩm tăng cường sức đề kháng, ngăn ngừa bệnh tật",
+      "content": " Để tăng cường sức đề kháng cơ thể, đặc biệt là người cao tuổi, người mắc các bệnh nền cần có chế độ ăn uống, sinh hoạt khoa học, bổ sung nhiều các thực phẩm có lợi, tăng sức đề kháng để hạn chế và phòng tránh được bệnh tật. “Ăn uống gì để tăng sức đề kháng?” đang trở thành mối quan tâm hàng đầu của cả cuộc đồng. Mời bạn đọc cùng Đắc Nguyên tìm hiểu thêm về Top 15 thực phẩm tăng cường sức đề kháng, ngăn ngừa bệnh tật được các chuyên gia dinh dưỡng khuyến cáo.",
+      "date": "20/06/2020",
+      "comment": 231,
+      "img": "image/content/content-1.jpeg"
+    },
+    {
+      "title": "10 Công Dụng Của Phúc Bồn Tử Đối Với Sức Khỏe",
+      "content": "Trái phúc bồn tử, cây phúc bồn tử, quả phúc bồn tử hay còn có tên gọi quen thuộc là quả mâm xôi vốn có chứa nhiều thành phần dinh dưỡng rất tốt cho cơ thể và sức khỏe của con người. Cùng Đắc Nguyên tìm hiểu thêm về loại trái này và 10 công dụng tuyệt vời mà phúc bồn tử mang lại cho sức khỏe nhé!",
+      "date": "20/06/2021",
+      "comment": 431,
+      "img": "image/content/content-2.jpeg"
+    },
+    {
+      "title": "Top 10 thực phẩm tăng cường trí nhớ, đầu óc minh mẫn",
+      "content": "Thực phẩm tăng cường trí nhớ gồm những dạng nào? Nếu bạn thường xuyên mệt mỏi, khó tập trung làm ảnh hưởng đến công việc và cuộc sống. Hãy tìm cách tăng cường cường trí bằng cách thông qua việc ăn uống, áp dụng các chế độ dinh dưỡng khoa học và phù hợp hơn. Cùng Dacnguyen.vn tìm hiểu Top 10 thực phẩm tăng cường trí nhớ, đầu óc minh mẫn mà chúng ta nên bổ sung vào bữa ăn hàng ngày nhé!",
+      "date": "20/08/2020",
+      "comment": 131,
+      "img": "image/content/content-3.jpeg"
+    }
+  ]
+}

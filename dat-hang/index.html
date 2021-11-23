@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../image/header/logo/logodn.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css" />
+    <link href="../style/fontawesome-pro-5.13.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/cart.css" />
+    <title>Giỏ Hàng|Đắc Nguyên</title>
+  </head>
+  <body>
+    <div class="card container">
+      <div class="row">
+        <div class="col-lg-8 cart" data-aos="fade-right">
+          <div class="title">
+            <img src="../image/header/logo/logodn.png" alt="" class="logo-dn" />
+          </div>
+          <div class="row title-form-cart">
+            <div class="col">Tên Sản Phẩm</div>
+            <div class="col"></div>
+            <div class="col">Số Lượng</div>
+            <div class="col" style="text-align: right">Giá</div>
+          </div>
+          <div id="render-productCart"></div>
+          <div class="back-to-shop">
+            <a href="/">
+              <i class="fas fa-angle-double-left"></i>
+              <span
+                class="text-muted"
+                style="color: #ffffff !important; margin-left: 12px"
+              >
+                Tiếp Tục Mua Hàng
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 summary" data-aos="fade-left">
+          <!-- title -->
+          <div>
+            <h5><b>HOÁ ĐƠN</b></h5>
+          </div>
+          <hr />
+          <!-- address -->
+          <div class="box-address">
+            <div class="title-box-address">Địa chỉ giao hàng</div>
+            <div class="input-address">
+              <input
+                type="text"
+                placeholder="Vui Lòng Nhập Địa Chỉ"
+                value=""
+                name="address"
+                id="address"
+              />
+              <input
+                type="number"
+                placeholder="Số Điện Thoại"
+                value=""
+                name="phone"
+                id="phoneNumber"
+              />
+              <input
+                type="text"
+                placeholder="Tên Khách Hàng"
+                value=""
+                name="name"
+                id="nameClient"
+              />
+            </div>
+          </div>
+          <hr />
+          <!-- delivery -->
+          <!-- CODE -->
+          <div class="box-code">
+            <div class="title-code">Nhập Mã Giảm Giá (Có Hoặc Không)</div>
+            <input
+              type="text"
+              placeholder="Mã Giảm Giá"
+              class="code"
+              value=""
+              id="CodeSale"
+            />
+            <button onClick="AddCodeSale()">Áp Dụng</button>
+            <i class="text-code" id="notification-Sale"
+              >Vui Lòng Nhập Mã Khuyến Mãi(Nếu Có)</i
+            >
+          </div>
+          <hr />
+          <!-- synthetic -->
+          <div class="synthetic">
+            <div class="text-synthetic">
+              <div>Tạm Tính (3 sản phẩm) :</div>
+              <div id="total-price-product">350.000 VNĐ</div>
+            </div>
+            <div class="text-synthetic">
+              <div>Giảm Giá :</div>
+              <div id="saleSuccess">0.000 VNĐ</div>
+            </div>
+            <div class="text-synthetic">
+              <div>Tổng Tiền :</div>
+              <div id="totalPrice">0.000 VNĐ</div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="add-pay">
+            <button onClick="order()">ĐẶT HÀNG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- //JS AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../style/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- //JS AOS -->
+  <script src="js/main.js">
+      function addProduct() {
+      console.log(listProduct);
+    }
+  </script>
+</html>

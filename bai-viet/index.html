@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/animation.css" />
+    <link
+      rel="stylesheet"
+      href="../style/fontawesome-pro-5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      rel="icon"
+      href="../image/header/logo/logodn.png"
+      type="image/x-icon"
+    />
+
+    <title>Bài Viết | Đắc Nguyên</title>
+  </head>
+
+  <body>
+    <!-- ********************************* -->
+    <div style="position: relative">
+      <div class="menu-phone-open" id="menu-phone">
+        <div
+          class="close-menu-mobile"
+          style="cursor: pointer; text-align: right; margin-top: 20px"
+          onClick="closeMenuMobile()"
+        >
+          <i class="fal fa-times-circle"></i>
+        </div>
+        <div>
+          <img
+            src="../image/header/logo/logodn.png"
+            alt="đắc nguyên"
+            class="logo-header"
+          />
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/">TRANG CHỦ</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/danh-sach-san-pham/">SẢN PHẨM</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="/danh-sach-bai-viet/">BÀI VIẾT</a>
+        </div>
+        <div>
+          <a class="menu-phone-list" href="#contact" onclick="closeMenuPhone()"
+            >LIÊN HỆ</a
+          >
+        </div>
+      </div>
+      <div class="background-header" id="home">
+        <div>
+          <!-- menu phone -->
+          <span class="menu-phone" onClick="openMenuPhone()">
+            <i class="far fa-bars"></i>
+          </span>
+          <span
+            class="shopcart-phone"
+            onmouseover="openlistcartPhone()"
+            onmouseout="closelistcertPhone()"
+          >
+            <i class="fad fa-cart-arrow-down"></i>
+          </span>
+          <div
+            class="menu-desktop"
+            id="menu-desktops"
+            style="position: fixed; z-index: 30"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="../image/header/logo/logodn.png"
+                    alt="đắc nguyên"
+                    class="logo-header"
+                  />
+                </div>
+                <div
+                  class="col"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                    justify-content: start;
+                    padding: 0px;
+                  "
+                >
+                  <ul class="menu-desktop-list">
+                    <li><a href="/">TRANG CHỦ</a></li>
+                    <li><a href="/danh-sach-san-pham/">SẢN PHẨM</a></li>
+                    <li><a href="/danh-sach-bai-viet/">BÀI VIẾT</a></li>
+                    <li><a href="#contact">LIÊN HỆ</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="col-3"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                  "
+                >
+                  <a
+                    href="/dat-hang/"
+                    style="text-decoration: none; position: relative"
+                  >
+                    <div
+                      class="shop-cart-header"
+                      onmouseover="openlistcartDesktop()"
+                      onmouseout="closelistcertDesktop()"
+                    >
+                      <span>Giỏ Hàng</span>
+                      <i class="fad fa-cart-arrow-down"></i>
+                    </div>
+                    <!-- cart list desktop -->
+                    <div class="cart-list-desktop">
+                      <div class="box-cart" id="cart-list-desktops">
+                        <div class="list-cart">
+                          <img
+                            src="../image/productlist/nuoccot.jpeg"
+                            alt="rượu phúc bồn tử"
+                            class="img-list-cart"
+                          />
+                          <div class="info-list-cart">
+                            <div class="quantity-list-cart">Số Lượng : 1</div>
+                            <div class="title-list-cart">
+                              Nước Cốt Phúc Bồn Tử
+                            </div>
+                            <div class="price-list-cart">124.000 VNĐ</div>
+                          </div>
+                        </div>
+                        <div class="list-cart">
+                          <img
+                            src="../image/productlist/nuoccot.jpeg"
+                            alt="rượu phúc bồn tử"
+                            class="img-list-cart"
+                          />
+                          <div class="info-list-cart">
+                            <div class="quantity-list-cart">Số Lượng : 1</div>
+                            <div class="title-list-cart">
+                              Nước Cốt Phúc Bồn Tử
+                            </div>
+                            <div class="price-list-cart">124.000 VNĐ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart list -->
+      <div class="cart-list">
+        <!-- list cart phone -->
+        <div class="cart-list-phone">
+          <div
+            class="box-cart"
+            id="cart-list-phones"
+            onmouseover="openlistcartPhone()"
+          >
+            <div class="list-cart">
+              <img
+                src="../image/productlist/nuoccot.jpeg"
+                alt="nước cốt phúc bồn tử"
+                class="img-list-cart"
+              />
+              <div class="info-list-cart">
+                <div class="quantity-list-cart">Số Lượng : 1</div>
+                <div class="title-list-cart">Nước Cốt Phúc Bồn Tử</div>
+                <div class="price-list-cart">124.000 VNĐ</div>
+              </div>
+            </div>
+            <a
+              onmouseover="openlistcartPhone()"
+              href="/dat-hang/"
+              style="
+                width: 100%;
+                border-radius: 100px;
+                background-color: #f15a5b;
+                color: aliceblue;
+                border: none;
+                display: block;
+                text-align: center;
+                padding: 10px 0px;
+                text-decoration: none;
+              "
+            >
+              Mua Ngay
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <!-- content -->
+        <section class="content">
+          <div class="container">
+            <div class="row">
+              <!-- content left -->
+              <div class="col-lg-9 col-md-12" style="padding: 5px">
+                <h1 class="title-content">
+                  Quả mâm xôi – Thành phần giá trị dinh dưỡng và những điều cần
+                  biết
+                </h1>
+                <span style="color: #ff5e5e; font-size: 12px"
+                  >Người đăng : Thanh Luc
+                </span>
+                <span> | </span>
+                <span style="color: #6e6e6e; font-size: 12px">
+                  <i class="fal fa-clock"></i> Ngày đăng : 20/7/2021</span
+                >
+                <img
+                  src="https://images.pexels.com/photos/3429783/pexels-photo-3429783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="quả mâm xôi"
+                  class="img-content"
+                />
+                <!-- //conent -->
+                <p style="text-align: justify">
+                  <b>Quả mâm xôi</b
+                  ><span style="font-weight: 400">
+                    hay còn gọi với tên thân mật là phúc bồn tử là loại quả có
+                    chứa rất nhiều các thành phần dinh dưỡng tốt cho sức khỏe.
+                    Do đó, phúc bồn tử luôn đứng đầu trong danh sách các loại
+                    quả nên dùng, được chị em phụ nữ tin tưởng dùng trong các
+                    món ăn tráng miệng, nước giải khát và kể cả món ăn chính
+                    cũng dần được biến tấu có thêm <strong>trái</strong></span
+                  ><strong>&nbsp;mâm xôi</strong
+                  ><span style="font-weight: 400"
+                    >. Từ lúc xuất hiện đến nay, phúc bồn tử chưa bao giờ làm
+                    người dùng thất vọng, càng chắc nịt lòng tin với hàm lượng
+                    dinh dưỡng mà quả mâm xôi mang lại người dùng. Rất nhiều các
+                    nguyên cứu từ trong nước và ngoài nước đều đưa những kết quả
+                    rất tốt cho em quả này. Vậy còn chần chờ gì nữa, hãy cùng
+                    <span style="color: #e34032"
+                      ><strong
+                        ><a style="color: #e34032" href="https://dacnguyen.vn"
+                          >Đắc Nguyên</a
+                        ></strong
+                      ></span
+                    >
+                    bắt đầu nhanh tìm hiểu thành phần dinh dưỡng phong phú của
+                    quả mâm xôi thôi!</span
+                  >
+                </p>
+                <!-- list-info -->
+                <div
+                  id="ez-toc-container"
+                  class="ez-toc-v2_0_17 counter-hierarchy ez-toc-grey"
+                >
+                  <div class="ez-toc-title-container">
+                    <p class="ez-toc-title">MỤC LỤC</p>
+                    <span class="ez-toc-title-toggle"
+                      ><a
+                        class="
+                          ez-toc-pull-right
+                          ez-toc-btn
+                          ez-toc-btn-xs
+                          ez-toc-btn-default
+                          ez-toc-toggle
+                        "
+                        style="display: inline"
+                        ><i class="ez-toc-glyphicon ez-toc-icon-toggle"></i></a
+                    ></span>
+                  </div>
+                  <nav>
+                    <ul class="ez-toc-list ez-toc-list-level-1">
+                      <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                        <a
+                          class="ez-toc-link ez-toc-heading-1"
+                          href="#1_Gia_tri_dinh_duong_cua_qua_mam_xoi"
+                          title="1. Giá trị dinh dưỡng của quả mâm xôi"
+                          >1. Giá trị dinh dưỡng của quả mâm xôi</a
+                        >
+                      </li>
+                      <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                        <a
+                          class="ez-toc-link ez-toc-heading-2"
+                          href="#2_Qua_mam_xoi_co_tac_dung_gi_den_suc_khoe_nguoi_dung"
+                          title="2. Quả mâm xôi có tác dụng gì đến sức khỏe người dùng&nbsp;"
+                          >2. Quả mâm xôi có tác dụng gì đến sức khỏe người
+                          dùng&nbsp;</a
+                        >
+                        <ul class="ez-toc-list-level-3">
+                          <li class="ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-3"
+                              href="#21_La_chat_chong_Oxy_hoa_manh_giam_nguy_co_mac_benh"
+                              title="2.1 Là chất chống Oxy hóa mạnh giảm nguy cơ mắc bệnh"
+                              >2.1 Là chất chống Oxy hóa mạnh giảm nguy cơ mắc
+                              bệnh</a
+                            >
+                          </li>
+                          <li class="ez-toc-page-1 ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-4"
+                              href="#22_Ham_luong_chat_xo_va_Tanin_cao_giup_kiem_soat_luong_duong_co_trong_mau"
+                              title="2.2 Hàm lượng chất xơ và Tanin cao giúp kiểm soát lượng đường có trong máu"
+                              >2.2 Hàm lượng chất xơ và Tanin cao giúp kiểm soát
+                              lượng đường có trong máu</a
+                            >
+                          </li>
+                          <li class="ez-toc-page-1 ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-5"
+                              href="#23_Trai_mam_xoi_-_khac_tinh_cua_benh_ung_thu"
+                              title="2.3 Trái mâm xôi – khắc tinh của bệnh ung thư"
+                              >2.3 Trái mâm xôi – khắc tinh của bệnh ung thư</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                        <a
+                          class="ez-toc-link ez-toc-heading-6"
+                          href="#3_Nhung_loi_ich_tiem_nang_cho_suc_khoe_cua_qua_mam_xoi_do_ban_can_biet"
+                          title="3. Những lợi ích tiềm năng cho sức khỏe của quả mâm xôi đỏ bạn cần biết"
+                          >3. Những lợi ích tiềm năng cho sức khỏe của quả mâm
+                          xôi đỏ bạn cần biết</a
+                        >
+                        <ul class="ez-toc-list-level-3">
+                          <li class="ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-7"
+                              href="#31_Cai_thien_tinh_trang_viem_khop"
+                              title="3.1 Cải thiện tình trạng viêm khớp"
+                              >3.1 Cải thiện tình trạng viêm khớp</a
+                            >
+                          </li>
+                          <li class="ez-toc-page-1 ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-8"
+                              href="#32_Ho_tro_giam_can_hieu_qua"
+                              title="3.2 Hỗ trợ giảm cân hiệu quả"
+                              >3.2 Hỗ trợ giảm cân hiệu quả</a
+                            >
+                          </li>
+                          <li class="ez-toc-page-1 ez-toc-heading-level-3">
+                            <a
+                              class="ez-toc-link ez-toc-heading-9"
+                              href="#33_Trai_mam_xoi_ho_tro_chong_lao_hoa"
+                              title="3.3 Trái mâm xôi hỗ trợ chống lão hóa"
+                              >3.3 Trái mâm xôi hỗ trợ chống lão hóa</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                        <a
+                          class="ez-toc-link ez-toc-heading-10"
+                          href="#4_Bat_bi_mot_so_cach_de_dua_qua_mam_xoi_vao_khau_phan_an"
+                          title="4. Bật bí một số cách để đưa quả mâm xôi vào khẩu phần ăn"
+                          >4. Bật bí một số cách để đưa quả mâm xôi vào khẩu
+                          phần ăn</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <h2>
+                  <span
+                    class="ez-toc-section"
+                    id="1_Gia_tri_dinh_duong_cua_qua_mam_xoi"
+                  ></span
+                  ><span style="color: #f15a5b"
+                    ><b>1. Giá trị dinh dưỡng của quả mâm xôi</b></span
+                  ><span class="ez-toc-section-end"></span>
+                </h2>
+                <!-- //img -->
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="dinh dưỡng mâm xôi"
+                    class="img-content"
+                  />
+                  <figcaption
+                    id="caption-attachment-1895"
+                    class="wp-caption-text"
+                  >
+                    <center>
+                      <strong>Giá trị dinh dưỡng của quả mâm xôi</strong>
+                    </center>
+                  </figcaption>
+                </div>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Là loại cây có nguồn gốc từ châu Âu, Bắc Á rất yêu thích
+                    nhiệt độ khí hậu mát mẻ nên những nơi có khí hậu mát mẻ đều
+                    có thể trồng được loại quả này. Được giới chuyên gia đánh
+                    gái là loại quả rất ít calo nhưng lại chứa thành phần dinh
+                    dưỡng rất cao, làm nhiều người bất ngờ.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Trung bình khoảng 123 gram <strong>trái mâm xôi</strong> có
+                    chứa:</span
+                  >
+                </p>
+                <ul style="text-align: justify">
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Năng lượng calo: 64</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Chất xơ: 8 gram</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Carbohydrates: 14.7 gram</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Chất béo: 0.8 gram</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Protein: 1,5 gram</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Vitamin C: chiếm hơn 50% lượng quả mâm xôi tiêu thụ được
+                      (~54RDI)</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Manang: 41% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Vitamin K: 12% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Vitamin E: 4% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Vitamin B: 4% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Sắt: 5% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Magie: 7%&nbsp; RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Photpho: 4% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Kali: 5% RDI</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Đồng: 6% RDI</span>
+                  </li>
+                </ul>
+                <h2>
+                  <span
+                    class="ez-toc-section"
+                    id="2_Qua_mam_xoi_co_tac_dung_gi_den_suc_khoe_nguoi_dung"
+                  ></span
+                  ><span style="color: #f15a5b"
+                    ><b
+                      >2. Quả mâm xôi có tác dụng gì đến sức khỏe người
+                      dùng&nbsp;</b
+                    ></span
+                  ><span class="ez-toc-section-end"></span>
+                </h2>
+                <h3 style="text-align: justify">
+                  <span
+                    class="ez-toc-section"
+                    id="21_La_chat_chong_Oxy_hoa_manh_giam_nguy_co_mac_benh"
+                  ></span
+                  ><b>2.1 Là chất chống Oxy hóa mạnh giảm nguy cơ mắc bệnh</b
+                  ><span class="ez-toc-section-end"></span>
+                </h3>
+                <!-- //img -->
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/221100/pexels-photo-221100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="giá trị trái mâm xôi"
+                    class="img-content"
+                  />
+                  <figcaption
+                    id="caption-attachment-1895"
+                    class="wp-caption-text"
+                  >
+                    <center>
+                      <strong>Giá trị dinh dưỡng của quả mâm xôi</strong>
+                    </center>
+                  </figcaption>
+                </div>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một trong các nguyên nhân chính dẫn đến các bệnh về ung
+                    thư, tiểu đường và tim mạch là do sự mất cân bằng oxi hóa
+                    trong cơ thể. Khái niệm về chất chống Oxy hóa có lẽ còn khá
+                    xa lạ với mọi người. Hiểu một cách đơn giản, chống Oxy hóa
+                    là các hợp chất có nguồn gốc từ thực, giúp các tế sau quá
+                    trình “làm việc” chống lại và có khả năng tái phục hồi sau
+                    quá trình oxy hóa. Nếu hiệu suất làm việc của quá trình này
+                    giảm đi, nguy cơ mắc các bệnh nguy hiểm rất cao, trong chỉ
+                    là 3 bệnh phổ biến đã kể trên mà còn rất nhiều các bệnh liên
+                    quan khác.&nbsp;</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Trong phúc bồn tử hỗ trợ rất tốt cho quá trình này, nhờ có
+                    hàm lượng chất chống oxy hóa rất mạnh giúp cơ thể giữ được
+                    trạng thái tốt nhất, nguy cơ mắc bệnh cũng giảm thấp xuống
+                    đáng kể.&nbsp;</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Thông tin một số loại quả có hàm lượng chất oxy hóa cao.
+                    Quả mâm xôi có hàm lượng chất chống oxy hóa ngang ngửa với
+                    quả dâu tây., bằng 1/4 quả việt quất. Quả mâm xôi đỏ có hàm
+                    lượng chất chống oxy hóa thấp hơn quả mâm xôi đen.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Để chứng minh khả năng giúp cơ thể giảm nguy cơ mắc bệnh,
+                    hàng loạt các nghiên cứu được diễn ra trên cơ thể động vật.
+                    Bằng cách sử dụng quả phúc bồn tử hay các dạng chiết xuất từ
+                    quả này cho một bên động vật sử dụng, còn bên kia thì không.
+                    Qua kết quả nghiên cứu đã đưa ra kết luận, quả mâm xôi không
+                    chỉ có chất chống oxy hóa giúp giảm nguy cơ về bệnh ung thư,
+                    tiểu đường, béo phì và còn hỗ trợ chống viên rất tốt.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một nghiên cứu khác được thực hiện trên chuột mắc bệnh béo
+                    phì và tiểu đường. Nghiên cứu được kéo dài trong 8 tuần, ở
+                    những chú chuột được ăn quả mâm xôi trong các khẩu phần ăn
+                    có các dấu hiệu viêm thấp, quá trình oxy hóa cũng được đảm
+                    bảo độ cân bằng thích hợp.&nbsp;</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Cũng là một thí nghiệm trên chuột nhưng lần này thu được
+                    axit ellagic có trong quả phúc bồn tử thực hiện song song 2
+                    nhiệm vụ: Một là hạn chế những tổn thương cho tế bào ở mức
+                    tối thiểu trong quá trình oxy hóa, hai là tái tạo những DNA
+                    đã và đang bị tổn thương.</span
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <strong
+                      ><strong>Có thể bạn quan tâm: </strong
+                      ><span style="color: #f15a5b"
+                        ><a
+                          style="color: #f15a5b"
+                          href="https://dacnguyen.vn/benh-tieu-duong-nen-an-gi/"
+                          >Người bệnh tiểu đường nên ăn gì? Không nên ăn gì?</a
+                        ></span
+                      ></strong
+                    >
+                  </li>
+                </ul>
+                <h3 style="text-align: justify">
+                  <span
+                    class="ez-toc-section"
+                    id="22_Ham_luong_chat_xo_va_Tanin_cao_giup_kiem_soat_luong_duong_co_trong_mau"
+                  ></span
+                  ><b
+                    >2.2 Hàm lượng chất xơ và Tanin cao giúp kiểm soát lượng
+                    đường có trong máu</b
+                  ><span class="ez-toc-section-end"></span>
+                </h3>
+                <!-- //img -->
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/2532001/pexels-photo-2532001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="giá trị dinh dưỡng trái mâm xôi"
+                    class="img-content"
+                  />
+                  <figcaption
+                    id="caption-attachment-1895"
+                    class="wp-caption-text"
+                  >
+                    <center>
+                      <strong>Giá trị dinh dưỡng của quả mâm xôi</strong>
+                    </center>
+                  </figcaption>
+                </div>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Trong loại quả mọng nước này, có nồng độ chất chống oxy hóa
+                    rất cao gấp 10 lần so với cà chua và ngừa ung thư. Phúc bồn
+                    tử còn chứa axit ellagic, một chất chống oxy hóa tự nhiên.
+                    Các nghiên cứu cho thấy tác dụng của phúc bồn tử có thể giúp
+                    giảm căng thẳng, giảm viêm và qua đó giúp cơ thể hạn chế sự
+                    phát triển của các tế bào ung thư.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một nghiên cứu khác cho thấy, thành phần sanguin H-6 có
+                    trong mâm xôi có thể đập vỗ khoảng 40% tế bào gây nên ung
+                    thư buồng trứng.&nbsp;</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Khi thực hiện một nghiên cứu chứng minh vai trò hỗ trợ giảm
+                    nguy cơ mắc bệnh ung thư trên chuột. Thí nghiệm sử dụng
+                    những chú chuột đã bị viêm đại tràng, tiến hành thí nghiệm
+                    trong 10 tuần. Với chế độ ăn được phân chia theo tỷ lệ có 5%
+                    quả mâm xôi trong bữa ăn. Kết quả nhận được ở những chú
+                    chuột được duy trì chế độ ăn 5%&nbsp; quả phúc bồn tử hàng
+                    ngày, tình trạng viêm ở đại tràng khá thấp, nguy cơ phát
+                    triển sang ung thư cũng thấp hơn rất nhiều so với những chú
+                    chuột không được ăn.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Khi thí nghiệm được phát triển nghiên cứu đến cơ quan mà
+                    con người rất hay vướng vào là ung thư gan. Thí nghiệm vẫn
+                    được thực hiện ở chuột, kết quả thí nghiệm đã chứng minh
+                    rằng ăn quả mâm xôi có thể hạn chế sự lây lan và phát triển
+                    của tế bào ung thư. Thậm chí khối u thư còn giảm xuống khi
+                    sử dụng quả mâm xôi đều đặn khoa học.</span
+                  >
+                </p>
+                <h2>
+                  <span
+                    class="ez-toc-section"
+                    id="3_Nhung_loi_ich_tiem_nang_cho_suc_khoe_cua_qua_mam_xoi_do_ban_can_biet"
+                  ></span
+                  ><span style="color: #f15a5b"
+                    ><b
+                      >3. Những lợi ích tiềm năng cho sức khỏe của quả mâm xôi
+                      đỏ bạn cần biết</b
+                    ></span
+                  ><span class="ez-toc-section-end"></span>
+                </h2>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Ngoài những lợi ích rõ ràng được liệt kê trên như hàm lượng
+                    dinh dưỡng cao, chất chống oxy hóa mạnh hạn chế ung thư, bảo
+                    vệ sức khỏe hoàn hảo. Bên cạnh những lợi ích đã được nghiên
+                    cứu thành công của <strong>quả mâm xôi đỏ</strong>, còn rất
+                    nhiều lợi ích khác từ loại quả này mà không phải ai cũng
+                    biết.&nbsp;</span
+                  >
+                </p>
+                <!-- //img -->
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/775030/pexels-photo-775030.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="giá trị trái mâm xôi đỏ"
+                    class="img-content"
+                  />
+                  <figcaption
+                    id="caption-attachment-1895"
+                    class="wp-caption-text"
+                  >
+                    <center>
+                      <strong>Giá trị dinh dưỡng của quả mâm xôi</strong>
+                    </center>
+                  </figcaption>
+                </div>
+                <h3 style="text-align: justify; margin-top: 20px">
+                  <span
+                    class="ez-toc-section"
+                    id="31_Cai_thien_tinh_trang_viem_khop"
+                  ></span
+                  ><b>3.1 Cải thiện tình trạng viêm khớp</b
+                  ><span class="ez-toc-section-end"></span>
+                </h3>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Từ những nghiên cứu&nbsp; đã nêu trên, các bạn dễ dàng nhận
+                    thấy quả mâm xôi có khả năng chống viêm rất tốt, nên khả
+                    năng hỗ trợ tình trạng viêm khớp cũng rất tốt. Đây được xem
+                    vai trò rất ưu việc của loại quả phúc bồn tử này.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Để làm rõ hơn vai trò giảm viêm khớp của phúc bồn tử. Các
+                    nhà khoa học cho những chú chuột vào 2 căn phòng khác nhau.
+                    Một bên có sử dụng các loại thuốc trị viêm chiết xuất từ quả
+                    mâm xôi, phòng còn lại không được sử dụng. Những chú chuột ở
+                    căn phòng có sử dụng thuốc nguy cơ viêm khớp cũng thấp hơn,
+                    đối với những chú chuột trước đó đã bị viêm khớp ở phòng có
+                    sử dụng chiết xuất từ phúc bồn tử cho những triệu chứng nhẹ
+                    hơn sơ với chuột ở phòng không được dùng các chiết xuất từ
+                    phúc bồn tử</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Tiến hành phân tích khớp xương của những chú chuột có sử
+                    dụng các chiết xuất từ quả mâm xôi. Nhận thấy, độ phồng và
+                    cấu trúc xương của chuột khá ổn định, không bị phá hủy,
+                    ngược lại hoàn toàn với những chú chuột không được sử
+                    dụng.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Quá trình ngăn cản COX-2, để giảm đau chống viêm,
+                    <strong>trái mâm xôi đỏ</strong>&nbsp;sẽ làm rất tốt.</span
+                  >
+                </p>
+                <h3 style="text-align: justify">
+                  <span
+                    class="ez-toc-section"
+                    id="32_Ho_tro_giam_can_hieu_qua"
+                  ></span
+                  ><b>3.2 Hỗ trợ giảm cân hiệu quả</b
+                  ><span class="ez-toc-section-end"></span>
+                </h3>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    ><strong>Quả mâm xôi</strong> được mệnh danh là loại quả có
+                    khả năng nhưng làm no bụng nhưng không hề gây mập. Trong quả
+                    mâm xôi có chứa đến hơn 80% là nước + 123 gam quả mâm xôi đã
+                    có chứa tới 8 gam chất xơ và 64 calo, thông qua những số
+                    liệu này đủ để chứng minh những gì mọi người bảo về loại quả
+                    giảm cân thần kì này là chính xác. Hầu hết trong quả là nước
+                    và chất xơ, calo lại cực thấp không có bất kỳ lý do để không
+                    chọn em này vào danh sách các thực phẩm hỗ trợ giảm cân
+                    nhanh, hiệu quả.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một nghiên cứu đã được diễn ra với mô hình như sau: cho
+                    những chú chuột vào 3 lồng khác nhau với 3 chế độ ăn. Lồng 1
+                    cho ăn thức ăn ít béo, lồng 2 cho ăn thức ăn nhiều chất béo,
+                    lồng 3 ăn nhiều chất béo và bổ sung thêm 1 trong 8 quả mọng
+                    nước. Kết quả, chuột ở lồng 3 có số cân nặng tăng thấp
+                    nhất.&nbsp;</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Ngoài ra, một số chất tự nhiên khác được tìm thấy trong
+                    phúc bồn tửhỗ trợ rất tốt trong giảm cân. Một trong số đó là
+                    Ketone, nhưng chất này lại rất ít được nghiên cứu. Trong
+                    nghiên cứu mới, khi cho chuột ăn nhiều chất béo nhưng có bổ
+                    sung thêm Ketone mâm xôi, cân nặng chuột tăng rất ít.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Tuy không chắc thực phẩm chức năng từ phúc bồn tử có thể
+                    giúp giảm cân. Nhưng điều chắc chắn là ăn quả mâm xôi có thể
+                    giúp no lâu, calo tiêu thụ lại rất thấp.</span
+                  >
+                </p>
+                <h3 style="text-align: justify">
+                  <span
+                    class="ez-toc-section"
+                    id="33_Trai_mam_xoi_ho_tro_chong_lao_hoa"
+                  ></span
+                  ><b>3.3 Trái mâm xôi hỗ trợ chống lão hóa</b
+                  ><span class="ez-toc-section-end"></span>
+                </h3>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Nhờ có được chất chống Oxy hóa cao có thể làm giảm các dấu
+                    hiệu lão hóa da nhờ khả năng đẩy lùi các gốc tự do trong cơ
+                    thể. Từ đó có thể kéo dài tuổi thọ của động vật và giúp làn
+                    da của con người khi được duy trì sự trẻ trung, hạn chế quá
+                    trình lão hóa.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Nhờ có được chất chống Oxy hóa cao có thể làm giảm các dấu
+                    hiệu lão hóa da nhờ khả năng đẩy lùi các gốc tự do trong cơ
+                    thể. Từ đó có thể kéo dài tuổi thọ của động vật và giúp làn
+                    da của con người khi được duy trì sự trẻ trung, hạn chế quá
+                    trình lão hóa.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một nghiên cứu khác được thực hiện trong 8 tuần, cho những
+                    chuột đã có tuổi ăn theo chế độ có chứa 1,5% phúc bồn tử.
+                    Sau thời gian thí nghiệm, sức khỏe của các chú chuột được
+                    duy trì ở mức độ tốt nhất, cơ quan vận động cũng không gặp
+                    khó khăn gì.</span
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <strong>Tham khảo:</strong>
+                    <span style="color: #f15a5b"
+                      ><strong
+                        ><a
+                          style="color: #f15a5b"
+                          href="https://dacnguyen.vn/cong-dung-cua-phuc-bon-tu/"
+                          >10 công dụng của Phúc Bồn Tử đối với sức khỏe</a
+                        ></strong
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <h2>
+                  <span
+                    class="ez-toc-section"
+                    id="4_Bat_bi_mot_so_cach_de_dua_qua_mam_xoi_vao_khau_phan_an"
+                  ></span
+                  ><span style="color: #f15a5b"
+                    ><b
+                      >4. Bật bí một số cách để đưa quả mâm xôi vào khẩu phần
+                      ăn</b
+                    ></span
+                  ><span class="ez-toc-section-end"></span>
+                </h2>
+                <!-- //img -->
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/208526/pexels-photo-208526.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="trái mâm xôi đen"
+                    class="img-content"
+                  />
+                  <figcaption
+                    id="caption-attachment-1895"
+                    class="wp-caption-text"
+                  >
+                    <center>
+                      <strong>Giá trị dinh dưỡng của quả mâm xôi</strong>
+                    </center>
+                  </figcaption>
+                </div>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Vì <strong>mâm xôi</strong> có thời gian bảo quản rất ngắn
+                    nên khi mua về hãy ăn nhanh trong vòng 1 đến 2 ngày. Chỉ nên
+                    mua với số lượng vừa phải để đảm bảo độ tươi ngon, khi để
+                    quá lâu phúc bồn tử có thể bị hư, không đảm bảo được hàm
+                    lượng dinh dưỡng.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Chính vụ của phúc bồn tử là vào mùa hè hoặc mùa thu vào
+                    thời điểm này hương vị của quả mâm xôi là ngon nhất. Tránh
+                    chọn các quả bị nát hay mốc nhé! Những quả ấy không đảm bảo
+                    chất lượng, có khả năng gây khó tiêu đi ăn phải.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Để có thể ăn được <strong>quả mâm xôi</strong> quanh năm,
+                    bạn có thể mua các loại quả mâm xôi đông lạnh được đóng gói
+                    kỹ càng. Ngay sau khi thu hoạch quả mâm xôi cầm được đông
+                    lạnh ngay mới đảm bảo được vị ngon tươi mát như ban đầu của
+                    chúng.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Quả mâm xôi là nguyên liệu khá phổ biến được sử dụng trong
+                    chế biến nước uống siro, rượu và các dạng bánh, mứt.</span
+                  >
+                </p>
+                <p style="text-align: justify">
+                  <span style="font-weight: 400"
+                    >Một số cách để đưa phúc bồn tử vào bữa ăn</span
+                  >
+                </p>
+                <ul style="text-align: justify">
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Sử dụng đơn giản như món tráng miệng với quả mâm xôi ướp
+                      lạnh</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Làm bữa sáng cùng sữa chua và ngũ cốc</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Uống riêng quả mâm xôi cùng ngũ cốc</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Bánh quế cùng quả mâm xôi</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400">Sinh tố mâm xôi</span>
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Salad trái cây tươi: mâm xôi, dâu, táo,..</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Salad thịt gà phô mai mix thêm quả mâm xôi</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Xay nhuyễn mâm xôi làm sốt</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Làm bánh ngọt với hương vị quả mâm xôi</span
+                    >
+                  </li>
+                  <li style="font-weight: 400" aria-level="1">
+                    <span style="font-weight: 400"
+                      >Món bánh nướng quả mâm xôi và yến mạch</span
+                    >
+                  </li>
+                </ul>
+                <p style="text-align: justify">
+                  <b>Quả mâm xôi</b
+                  ><span style="font-weight: 400">
+                    được xem là thực phẩm thần dược, vừa là nguồn thức ăn đầy đủ
+                    các dưỡng chất vừa hỗ trợ bảo vệ sức khỏe người dùng. Quả
+                    mâm xôi tuy nhỏ bé nhưng những gì loại quả mọng nước này đem
+                    lại không hề nhỏ bé đâu nhé! Không chỉ nhận được lời khuyên
+                    từ các chuyên gia, bác sĩ nên tăng cường quả mâm xôi trong
+                    khẩu phần ăn, mà ngay cả người tiêu dùng cũng cảm nhận rất
+                    rõ những lợi ích mà quả mâm xôi mang đến. Vì vậy, tình yêu
+                    đối với <strong>trái</strong></span
+                  ><strong>&nbsp;mâm xôi</strong
+                  ><span style="font-weight: 400">
+                    không bao giờ có thể dập tắt được. Rất hy vọng bài viết này
+                    thật bổ ích cho các bạn, chúc các bạn luôn duy trì được sức
+                    khỏe tốt nhất.&nbsp;</span
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <strong>Bài viết có liên quan:</strong>
+                    <strong style="color: #f15a5b; font-size: 14.4px"
+                      ><a
+                        style="color: #f15a5b"
+                        href="https://dacnguyen.vn/cach-che-bien-qua-phuc-bon-tu/"
+                        >Bỏ túi 8 cách chế biến quả Phúc Bồn Tử thơm ngon bổ
+                        dưỡng tại nhà</a
+                      ></strong
+                    >
+                    <!-- // keyword -->
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><strong class="title-keyword"
+                            >Công dụng trái mâm xôi</strong
+                          ></a
+                        >
+                      </li>
+
+                      <li>
+                        <a href=""
+                          ><strong class="title-keyword"
+                            >Công dụng trái Phúc Bồn Tử</strong
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong class="title-keyword"
+                            >Trái mâm xôi đỏ</strong
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong class="title-keyword"
+                            >Trái phúc bồn tử đen</strong
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href=""
+                          ><strong class="title-keyword"
+                            >Trái mâm xôi trị bệnh</strong
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="share-content">
+                  <span>Chia sẻ</span>
+                  <svg
+                    focusable="false"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z"
+                    ></path>
+                  </svg>
+                </div>
+                <!-- // comment -->
+                <div class="box-comment">
+                  <div class="comment-number">
+                    <i class="fad fa-comments"></i> 5 Bình Luận
+                  </div>
+                  <ul class="comment-list">
+                    <li>
+                      <img
+                        src="img/img-comment/eea5af9a71aac661d6cf0aad512c8b69.png"
+                        alt="sản phẩm chất lượng"
+                        class="comment-img"
+                      />
+                      <span>
+                        <strong>Phong Nguyễn</strong><br />
+                        <p style="margin: 0px">Sản Phẩm Chất Lượng</p>
+                      </span>
+                    </li>
+                    <li>
+                      <img
+                        src="img/img-comment/cmt-1.jpeg"
+                        alt="giao hàng nhanh"
+                        class="comment-img"
+                      />
+                      <span>
+                        <strong>Phong Phúc</strong><br />
+                        <p style="margin: 0px">
+                          Giao hàng nhanh, chất lượng, sẽ ủng hộ thêm
+                        </p>
+                      </span>
+                    </li>
+                    <li>
+                      <img
+                        src="img/img-comment/cmt-2.jpeg"
+                        alt="khách hàng"
+                        class="comment-img"
+                      />
+                      <span>
+                        <strong>Phong Nguyễn</strong><br />
+                        <p style="margin: 0px">
+                          Sản Phẩm Chất Lượng, cho 5 sao
+                        </p>
+                      </span>
+                    </li>
+                    <li>
+                      <img
+                        src="img/img-comment/cmt-3.jpeg"
+                        alt="đánh giá khách hàng"
+                        class="comment-img"
+                      />
+                      <span>
+                        <strong>Phong Nguyễn</strong><br />
+                        <p style="margin: 0px">Có hàng tươi kh shop</p>
+                      </span>
+                    </li>
+                    <li>
+                      <img
+                        src="img/img-comment/cmt-2.jpeg"
+                        alt="đánh gia khách hàng"
+                        class="comment-img"
+                      />
+                      <span>
+                        <strong>Phong Nguyễn</strong><br />
+                        <p style="margin: 0px">
+                          Sản Phẩm Chất Lượng, cho 5 sao
+                        </p>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="box-input-comment">
+                    <div class="title-comment-input">
+                      Để lại bình luận của bạn
+                    </div>
+                    <textarea
+                      class="comment-inputs"
+                      placeholder="Để lại bình luận của bạn"
+                      name="comment"
+                    ></textarea>
+                    <input
+                      class="email-name-inputs"
+                      placeholder="Tên"
+                      id="author"
+                      name="author"
+                      type="text"
+                      value=""
+                      size="30"
+                      maxlength="245"
+                      required="required"
+                    />
+                    <input
+                      placeholder="Email hoặc SĐT"
+                      class="email-name-inputs"
+                      id="author"
+                      name="author"
+                      type="text"
+                      value=""
+                      size="30"
+                      maxlength="245"
+                      required="required"
+                    />
+                    <div>
+                      <input
+                        name="submit"
+                        type="submit"
+                        id="submit"
+                        class="btn-comment"
+                        value="đăng bình luận"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product right -->
+              <div class="col-lg-3 col-md-12" style="padding: 10px">
+                <div class="advertisement">
+                  <img
+                    src="/image/banner-quan-cao/quang-cao.gif"
+                    alt="rượu vang phúc bồn tử"
+                    class="img-advertisement"
+                  />
+                </div>
+                <div class="title-product-right">Sản phẩm nổi bật</div>
+                <div class="box-product">
+                  <a class="box-product-info">
+                    <img
+                      src="img/product/concept-mat-phuc-bon-tu-2.jpeg"
+                      alt="rượu vang đỏ"
+                      class="img-product"
+                    />
+                    <div>
+                      <div class="title-product">Rượu phúc bồn tử</div>
+                      <del>200.000VNĐ</del>
+                      <div class="price-product">120.000 VNĐ</div>
+                    </div>
+                  </a>
+                  <a class="box-product-info">
+                    <img
+                      src="img/product/concept-ruou-phuc-bon-tu-1.jpeg"
+                      alt="rượu phuc  bồn tử đỏ"
+                      class="img-product"
+                    />
+                    <div>
+                      <div class="title-product">Rượu phúc bồn tử</div>
+                      <del>200.000VNĐ</del>
+                      <div class="price-product">120.000 VNĐ</div>
+                    </div>
+                  </a>
+                  <a class="box-product-info">
+                    <img
+                      src="img/product/nuoccot.jpeg"
+                      alt="rượu vang đen"
+                      class="img-product"
+                    />
+                    <div>
+                      <div class="title-product">Rượu phúc bồn tử</div>
+                      <del>200.000VNĐ</del>
+                      <div class="price-product">120.000 VNĐ</div>
+                    </div>
+                  </a>
+                  <a class="box-product-info">
+                    <img
+                      src="img/product/mut.jpeg"
+                      alt="rượu phúc bồn tử"
+                      class="img-product"
+                    />
+                    <div>
+                      <div class="title-product">Rượu phúc bồn tử</div>
+                      <del>200.000VNĐ</del>
+                      <div class="price-product">120.000 VNĐ</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- content-new -->
+        <section>
+          <div class="container">
+            <div class="box-content-news">
+              <div class="title-conten-new">Bài viết mới nhất</div>
+              <div class="row">
+                <a class="col-md-6 col-lg-3 box-content-new">
+                  <div class="box-img-content-new">
+                    <img
+                      src="/bai-viet/img/content/1.jpeg"
+                      alt="siro phúc bồn tử"
+                      class="img-content-new"
+                    />
+                    <div class="date-up-content">
+                      <i class="fad fa-clock"></i> Ngày 19 tháng 7 năm 2021
+                    </div>
+                  </div>
+                  <div class="box-title-content">
+                    <h5
+                      style="
+                        color: aliceblue;
+                        font-weight: 700;
+                        font-size: 23px;
+                      "
+                    >
+                      Cách làm siro dâu tằm thơm ngon bổ dưỡng ngay tại nhà
+                    </h5>
+                    <p>
+                      Siro dâu tằm, nước cốt dâu tằm đều là một trong các top
+                      thức uống thơm ngon, bổ dưỡng được dùng nhiều vào mùa hè,
+                      được pha chế các món thức uống đặc biệt tại các quán nổi
+                      tiếng.
+                    </p>
+                  </div>
+                </a>
+                <a class="col-md-6 col-lg-3 box-content-new">
+                  <div class="box-img-content-new">
+                    <img
+                      src="/bai-viet/img/content/3.jpeg"
+                      alt="trai phuc bon tu"
+                      class="img-content-new"
+                    />
+                    <div class="date-up-content">
+                      <i class="fad fa-clock"></i> Ngày 19 tháng 6 năm 2021
+                    </div>
+                  </div>
+                  <div class="box-title-content">
+                    <h5
+                      style="
+                        color: aliceblue;
+                        font-weight: 700;
+                        font-size: 23px;
+                      "
+                    >
+                      Rượu dâu tầm có tác dụng gì? Cách ngâm rượu dâu tằm đúng
+                      chuẩn
+                    </h5>
+                    <p>
+                      Siro dâu tằm, nước cốt dâu tằm đều là một trong các top
+                      thức uống thơm ngon, bổ dưỡng được dùng nhiều vào mùa hè,
+                      được pha chế các món thức uống đặc biệt tại các quán nổi
+                      tiếng.
+                    </p>
+                  </div>
+                </a>
+                <a class="col-md-6 col-lg-3 box-content-new">
+                  <div class="box-img-content-new">
+                    <img
+                      src="/bai-viet/img/content/4.jpeg"
+                      alt="phuc bồn tử đỏ"
+                      class="img-content-new"
+                    />
+                    <div class="date-up-content">
+                      <i class="fad fa-clock"></i> Ngày 19 tháng 7 năm 2021
+                    </div>
+                  </div>
+                  <div class="box-title-content">
+                    <h5
+                      style="
+                        color: aliceblue;
+                        font-weight: 700;
+                        font-size: 23px;
+                      "
+                    >
+                      Cách làm siro dâu tằm thơm ngon bổ dưỡng ngay tại nhà
+                    </h5>
+                    <p>
+                      Siro dâu tằm, nước cốt dâu tằm đều là một trong các top
+                      thức uống thơm ngon, bổ dưỡng được dùng nhiều vào mùa hè,
+                      được pha chế các món thức uống đặc biệt tại các quán nổi
+                      tiếng.
+                    </p>
+                  </div>
+                </a>
+                <a class="col-md-6 col-lg-3 box-content-new">
+                  <div class="box-img-content-new">
+                    <img
+                      src="/bai-viet/img/content/5.jpeg"
+                      alt="công dụng phúc bồn tử"
+                      class="img-content-new"
+                    />
+                    <div class="date-up-content">
+                      <i class="fad fa-clock"></i> Ngày 19 tháng 7 năm 2021
+                    </div>
+                  </div>
+                  <div class="box-title-content">
+                    <h5
+                      style="
+                        color: aliceblue;
+                        font-weight: 700;
+                        font-size: 23px;
+                      "
+                    >
+                      Cách làm siro dâu tằm thơm ngon bổ dưỡng ngay tại nhà
+                    </h5>
+                    <p>
+                      Siro dâu tằm, nước cốt dâu tằm đều là một trong các top
+                      thức uống thơm ngon, bổ dưỡng được dùng nhiều vào mùa hè,
+                      được pha chế các món thức uống đặc biệt tại các quán nổi
+                      tiếng.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- icon -->
+        <section class="background-icon">
+          <div class="box-icon-trademark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/1.png"
+                          alt="thanh toán nhận hàng"
+                          class="img-icon-bottom"
+                        />
+                        <div>Thanh Toán Khi Nhận Hàng</div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/2.png"
+                          alt="thương hiệu lớn"
+                          class="img-icon-bottom"
+                        />
+                        <div>Thương Hiệu Uy Tín Toàn Cầu</div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="icon-bottom">
+                        <img
+                          src="../image/icon/3.png"
+                          alt="free ship"
+                          class="img-icon-bottom"
+                        />
+                        <div>FreeShip HCM Hoá Đơn Từ 800.000đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  "
+                >
+                  <div class="box-contact-icon-right">
+                    <div class="row">
+                      <div class="col">
+                        <div class="icon-contact-right">
+                          <span>
+                            <img
+                              src="../image/icon/icons_hotline_kn.svg"
+                              alt="khiếu nại"
+                            />
+                          </span>
+                          <div>Khiếu nại, góp ý <br />0348 57 5883</div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="icon-contact-right">
+                          <span>
+                            <img
+                              src="../image/icon/icons_hotline_tv.svg"
+                              alt="hotline"
+                            />
+                          </span>
+                          <div>Tư Vấn <br />0838 16 0480</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+          <div></div>
+          <div class="background-foodter">
+            <div class="background-foodter-img">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <div class="wrapper">
+                      <div class="row box-form-contact">
+                        <div
+                          class="
+                            col-lg-8 col-md-12
+                            order-md-last
+                            d-flex
+                            align-items-stretch
+                          "
+                          data-aos="fade-left"
+                        >
+                          <div class="contact-wrap w-100 p-md-5 p-4">
+                            <h3
+                              class="mb-4"
+                              style="color: #000000; font-weight: 800"
+                            >
+                              TƯ VẤN MIỄN PHÍ
+                            </h3>
+                            <div class="mb-4">
+                              Quý Khách Vui Lòng Điền Thông Tin Liên Hệ!
+                            </div>
+                            <form
+                              class="contactForm"
+                              name="contactForm "
+                              id="contactForm "
+                            >
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="">
+                                    <label class="label" for="name "
+                                      >Họ Và Tên</label
+                                    >
+                                    <input
+                                      type="text "
+                                      class="form-control"
+                                      name="name "
+                                      id="name "
+                                      placeholder="Họ Và Tên "
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="">
+                                    <label class="label" for="email "
+                                      >Địa Chỉ Liên Hệ</label
+                                    >
+                                    <input
+                                      type="email "
+                                      class="form-control"
+                                      name="email "
+                                      id="email "
+                                      placeholder="Email hoặc SĐT"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="">
+                                    <label class="label" for="# "
+                                      >Nội Dung</label
+                                    >
+                                    <textarea
+                                      name="message "
+                                      class="form-control"
+                                      id="message "
+                                      cols="30 "
+                                      rows="4 "
+                                      placeholder="nội dung (có hoặc không) "
+                                    ></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-md-12" style="margin-top: 10%">
+                                  <div class="">
+                                    <button class="button-contact-foodter">
+                                      GỬI
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div
+                          class="col-lg-4 col-md-12 d-flex align-items-stretch"
+                          data-aos="fade-right"
+                          style="background-color: #181818"
+                        >
+                          <div
+                            class="info-wrap w-100 p-md-5 p-4 box-left-contact"
+                          >
+                            <h3>Công ty Đắc Nguyên</h3>
+                            <p class="mb-4">
+                              Cảm ơn mọi người đã quan tâm đến sản phẩm của Đắc
+                              Nguyên
+                            </p>
+                            <div
+                              class="w-100 d-flex align-items-start mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span
+                                  class="fa fa-map-marker icon-map-contact"
+                                ></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p style="margin: 0px">
+                                  <span>Địa Chỉ:</span> 14-04 Đường số 9A, Xã
+                                  Bình Hưng, Huyện Bình Chánh, Hồ Chí Minh
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span class="fa fa-phone icon-contacts"></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Hotlite:</span>
+                                  <a href="tel://0838 16 0480 "
+                                    >0838 16 0480 – 0728 80 8081 – 0348 57
+                                    5883</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span
+                                  class="fa fa-paper-plane icon-contacts"
+                                ></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Email:</span>
+                                  <a href="mailto:ctydacnguyen@gmail.com "
+                                    >ctydacnguyen@gmail.com</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="w-100 d-flex align-items-center mg-bt-17"
+                            >
+                              <div
+                                class="
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <span class="fa fa-globe icon-contacts"></span>
+                              </div>
+                              <div class="text pl-3">
+                                <p>
+                                  <span>Website</span>
+                                  <a href="#https://dacnguyen.vn/"
+                                    >dacnguyen.vn</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="foodter">CÔNG TY ĐẮC NGUYÊN</div>
+        <!-- btn-home -->
+        <a href="#home" class="btn-home">
+          <i class="fas fa-arrow-alt-square-up"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <script>
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "107927288153938");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v12.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <!-- Messenger Plugin chat Code -->
+  <script src="../style/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    var menuPhone = document.getElementById("menu-phone");
+    menuPhone.style.display = "none";
+
+    function closeMenuPhone() {
+      closeMenuMobile();
+    }
+    function closeMenuMobile() {
+      menuPhone.classList.add("animation-menu-mobile-out");
+      setTimeout(() => {
+        menuPhone.style.display = "none";
+        menuPhone.classList.remove("animation-menu-mobile-out");
+      }, 600);
+    }
+    function openMenuPhone() {
+      menuPhone.style.display = "block";
+      menuPhone.classList.add("animation-menu-mobile-in");
+    }
+    setTimeout(() => {
+      menuPhone.classList.remove("animation-menu-mobile-in");
+    }, 700);
+  </script>
+  <!-- scroll menu -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("menu-desktops").style.top = "0";
+        document
+          .getElementById("menu-desktops")
+          .classList.add("animation-top-bottom-menu");
+      } else {
+        document
+          .getElementById("menu-desktops")
+          .classList.remove("animation-top-bottom-menu");
+        document.getElementById("menu-desktops").style.top = "-60px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+  <!-- cart list dekstop -->
+  <script>
+    document.getElementById("cart-list-desktops").style.display = "none";
+    function openlistcartDesktop() {
+      document.getElementById("cart-list-desktops").style.display = "block";
+    }
+    function closelistcertDesktop() {
+      document.getElementById("cart-list-desktops").style.display = "none";
+    }
+  </script>
+  <!-- cart list phone -->
+  <script>
+    document.getElementById("cart-list-phones").style.display = "none";
+    function openlistcartPhone() {
+      document.getElementById("cart-list-phones").style.display = "block";
+    }
+    function closelistcertPhone() {
+      document.getElementById("cart-list-phones").style.display = "none";
+    }
+  </script>
+</html>

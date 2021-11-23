@@ -1,0 +1,66 @@
+.menu-mobile {
+  position: absolute;
+  z-index: 201;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  background-color: #000000de;
+  height: 100vh;
+  padding: 1em;
+  display: none;
+}
+.close-menu-mobile {
+  text-align: right;
+  font-size: 36px;
+  color: beige;
+}
+.list-menu-mobile ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+  margin-top: 77px;
+}
+.list-menu-mobile ul li {
+  margin: 28px 0px;
+}
+.list-menu-mobile ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 23px;
+  font-weight: 500;
+  border-radius: 28px;
+  padding: 10px;
+  border-bottom: 2px solid #c8b380;
+}
+
+.open-menu-mobile {
+  position: fixed;
+  right: -1px;
+  z-index: 5;
+  top: 20px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(293deg, #ffffff, #7e5d00 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Asap", sans-serif;
+  font-size: 27px;
+  border-radius: 73%;
+  border-left: 6px solid #866f30;
+  padding: 0px 9px;
+}
+
+.open-menu-mobile:hover {
+  background: -webkit-linear-gradient(293deg, #ffffff, #b79b4b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-left: 6px solid #f5c851;
+  font-size: 37px;
+  right: -2px;
+  top: 19px;
+  transition: 0.3s;
+}
+@media screen and (min-width: 500px) {
+  .open-menu-mobile {
+    display: none;
+  }
+}

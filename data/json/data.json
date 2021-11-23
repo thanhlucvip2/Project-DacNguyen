@@ -1,0 +1,116 @@
+{
+  "ListProduct": [
+    {
+      "name": "Mật Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 450,
+      "newprice": 360,
+      "sold": 122,
+      "img": {
+        "img-1": "data/img-dac-nguyen/mat-pbt/mat-1.jpeg",
+        "img-2": "data/img-dac-nguyen/mat-pbt/mat-2.jpeg",
+        "img-3": "data/img-dac-nguyen/mat-pbt/mat-3.jpeg",
+        "img-4": "data/img-dac-nguyen/mat-pbt/mat-4.jpeg"
+      },
+      "id": 11
+    },
+    {
+      "name": "Rượu Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 870,
+      "newprice": 696,
+      "sold": 212,
+      "img": {
+        "img-1": "data/img-dac-nguyen/ruou-pbt/ruou-1.jpeg",
+        "img-2": "data/img-dac-nguyen/ruou-pbt/ruou-2.jpeg",
+        "img-3": "data/img-dac-nguyen/ruou-pbt/ruou-3.jpeg",
+        "img-4": "data/img-dac-nguyen/ruou-pbt/ruou-4.jpeg"
+      },
+      "id": 22
+    },
+    {
+      "name": "Nước Cốt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 312,
+      "img": {
+        "img-1": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-1.jpeg",
+        "img-2": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-2.jpeg",
+        "img-3": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-3.jpeg",
+        "img-4": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-4.jpeg"
+      },
+      "id": 33
+    },
+    {
+      "name": "Mứt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 29,
+      "img": {
+        "img-1": "data/img-dac-nguyen/mut-pbt/mut-1.jpeg",
+        "img-2": "data/img-dac-nguyen/mut-pbt/mut-2.jpeg",
+        "img-3": "data/img-dac-nguyen/mut-pbt/mut-3.jpeg",
+        "img-4": "data/img-dac-nguyen/mut-pbt/mut-4.jpeg"
+      },
+      "id": 44
+    },
+    {
+      "name": "Mật Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 450,
+      "newprice": 360,
+      "sold": 122,
+      "img": {
+        "img-1": "data/img-dac-nguyen/mat-pbt/mat-1.jpeg",
+        "img-2": "data/img-dac-nguyen/mat-pbt/mat-2.jpeg",
+        "img-3": "data/img-dac-nguyen/mat-pbt/mat-3.jpeg",
+        "img-4": "data/img-dac-nguyen/mat-pbt/mat-4.jpeg"
+      },
+      "id": 11
+    },
+    {
+      "name": "Rượu Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 870,
+      "newprice": 696,
+      "sold": 212,
+      "img": {
+        "img-1": "data/img-dac-nguyen/ruou-pbt/ruou-1.jpeg",
+        "img-2": "data/img-dac-nguyen/ruou-pbt/ruou-2.jpeg",
+        "img-3": "data/img-dac-nguyen/ruou-pbt/ruou-3.jpeg",
+        "img-4": "data/img-dac-nguyen/ruou-pbt/ruou-4.jpeg"
+      },
+      "id": 22
+    },
+    {
+      "name": "Nước Cốt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 312,
+      "img": {
+        "img-1": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-1.jpeg",
+        "img-2": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-2.jpeg",
+        "img-3": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-3.jpeg",
+        "img-4": "data/img-dac-nguyen/nuoc-cot-pbt/nuoccot-4.jpeg"
+      },
+      "id": 33
+    },
+    {
+      "name": "Mứt Phúc Bồn Tử",
+      "sale": "20%",
+      "price": 155,
+      "newprice": 124,
+      "sold": 29,
+      "img": {
+        "img-1": "data/img-dac-nguyen/mut-pbt/mut-1.jpeg",
+        "img-2": "data/img-dac-nguyen/mut-pbt/mut-2.jpeg",
+        "img-3": "data/img-dac-nguyen/mut-pbt/mut-3.jpeg",
+        "img-4": "data/img-dac-nguyen/mut-pbt/mut-4.jpeg"
+      },
+      "id": 44
+    }
+  ]
+}
